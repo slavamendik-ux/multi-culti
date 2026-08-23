@@ -143,7 +143,7 @@
       --lead-font-size: 0.96rem;
       --lead-line-height: 1.55;
 
-      /* Surfaces, Borders & Deep Ambient Shadows */
+      /* Surfaces, Borders & Ambient Shadows */
       --card-bg: #F4F7F5;
       --card-border-ru: #A7F3D0;
       --card-border-en: #FED7AA;
@@ -200,7 +200,7 @@
     }
 
     /* ============================================================
-       FIXED HEADER
+       FIXED HEADER WITH DESKTOP & MOBILE RESPONSIVENESS
        ============================================================ */
     header {
       position: fixed;
@@ -298,15 +298,15 @@
       opacity: 0.9;
     }
 
-    /* Language Switcher Button */
+    /* Crisp Inline Vector Flag Switcher Button */
     .btn-lang-toggle {
       background: #FFFFFF;
       border: 2px solid var(--stem-color);
       border-radius: 50px;
-      padding: 0.35rem 0.7rem;
-      display: flex;
+      padding: 0.32rem 0.65rem;
+      display: inline-flex;
       align-items: center;
-      gap: 0.35rem;
+      gap: 0.45rem;
       cursor: pointer;
       font-family: 'Manrope', sans-serif;
       font-size: 0.78rem;
@@ -315,11 +315,18 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       white-space: nowrap;
       flex-shrink: 0;
+      transition: transform 0.15s ease, background-color 0.15s ease;
     }
 
-    .lang-flag {
-      font-size: 1.1rem;
-      line-height: 1;
+    .btn-lang-toggle:hover {
+      transform: scale(1.04);
+      background: #F4F7F5;
+    }
+
+    .lang-flag-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .btn-cta {
@@ -338,6 +345,11 @@
       text-align: center;
       line-height: 1.12;
       flex-shrink: 0;
+    }
+
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(190, 42, 132, 0.45);
     }
 
     .btn-text-ru {
@@ -1244,6 +1256,56 @@
     }
 
     /* ============================================================
+       DESKTOP DUAL-COLUMN FOCUS / GREYOUT EFFECT (> 860px)
+       ============================================================ */
+    @media (min-width: 861px) {
+      .about-col-ru, .about-col-en,
+      .column-ru, .column-en,
+      .team-header-ru, .team-header-en,
+      .member-card-ru, .member-card-en {
+        transition: filter 0.35s ease, opacity 0.35s ease;
+      }
+
+      /* When Russian is Active (Default on Desktop) */
+      body.lang-ru .about-col-en,
+      body.lang-ru .column-en,
+      body.lang-ru .team-header-en,
+      body.lang-ru .member-card-en {
+        filter: grayscale(100%) contrast(85%);
+        opacity: 0.35;
+        pointer-events: none;
+      }
+
+      body.lang-ru .about-col-ru,
+      body.lang-ru .column-ru,
+      body.lang-ru .team-header-ru,
+      body.lang-ru .member-card-ru {
+        filter: grayscale(0%);
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      /* When English is Active */
+      body.lang-en .about-col-ru,
+      body.lang-en .column-ru,
+      body.lang-en .team-header-ru,
+      body.lang-en .member-card-ru {
+        filter: grayscale(100%) contrast(85%);
+        opacity: 0.35;
+        pointer-events: none;
+      }
+
+      body.lang-en .about-col-en,
+      body.lang-en .column-en,
+      body.lang-en .team-header-en,
+      body.lang-en .member-card-en {
+        filter: grayscale(0%);
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+
+    /* ============================================================
        RESPONSIVE MOBILE ENGINE (≤ 860px)
        ============================================================ */
     @media (max-width: 860px) {
@@ -1294,7 +1356,6 @@
         font-size: 0.68rem;
       }
 
-      /* Sections Spacing */
       .about-section, .team-section, .venue-section {
         padding: 1.8rem 1rem 2.4rem;
       }
@@ -1321,7 +1382,6 @@
         animation: badgeFloat 2.8s ease-in-out infinite !important;
       }
 
-      /* Clean 1-Column Responsive Grids */
       .about-grid,
       .team-headers-grid,
       .team-cards-grid,
@@ -1472,11 +1532,11 @@
     }
   </style>
 </head>
-<body class="lang-en">
+<body class="lang-ru">
 
   <a href="#about" class="skip-link">Skip to content / Перейти к контенту</a>
 
-  <!-- Fixed Navigation Banner with Stacked Dual-Language Links & Mobile Flag Toggle -->
+  <!-- Fixed Navigation Banner -->
   <header>
     <div class="nav-left">
       <a href="#about" class="nav-link">
@@ -1519,10 +1579,10 @@
         <span class="nav-text-en">Contact</span>
       </a>
 
-      <!-- Flag Language Toggle Switch -->
+      <!-- Vector Flag Language Toggle Switch -->
       <button id="langToggleBtn" class="btn-lang-toggle" aria-label="Switch Language / Сменить язык" title="Switch Language">
-        <span class="lang-flag" id="langFlag">🇬🇧</span>
-        <span class="lang-code" id="langCode">EN</span>
+        <span class="lang-flag-icon" id="langFlagIcon"></span>
+        <span class="lang-code" id="langCode">RU</span>
       </button>
 
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSjNjpZpZkEj8Wy4Nf4Dxqr7oqnb6S6152R-9N59a52cVdZQ/viewform" target="_blank" rel="noopener noreferrer" class="btn-cta">
@@ -1533,7 +1593,7 @@
     </div>
   </header>
 
-  <!-- 1. ABOUT US SECTION (MISSION & VISION) -->
+  <!-- 1. ABOUT US SECTION -->
   <section id="about" class="about-section" aria-label="About Us / О нас">
     <div class="about-container">
 
@@ -1750,34 +1810,55 @@
     document.addEventListener("DOMContentLoaded", () => {
       // 1. Language Toggle Setup
       const toggleBtn = document.getElementById("langToggleBtn");
-      const flagSpan = document.getElementById("langFlag");
+      const flagIconContainer = document.getElementById("langFlagIcon");
       const codeSpan = document.getElementById("langCode");
 
-      let currentLang = localStorage.getItem("multiCultiLang") || "en";
+      const svgUK = `
+        <svg width="20" height="14" viewBox="0 0 60 30" style="border-radius:2px; display:block;">
+          <clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+          <clipPath id="t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>
+          <g clip-path="url(#s)">
+            <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+            <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/>
+            <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+          </g>
+        </svg>`;
 
-      function updateLanguage(lang) {
+      const svgRU = `
+        <svg width="20" height="14" viewBox="0 0 9 6" style="border-radius:2px; display:block; border: 1px solid rgba(0,0,0,0.15);">
+          <rect fill="#fff" width="9" height="6"/>
+          <rect fill="#0039A6" y="2" width="9" height="4"/>
+          <rect fill="#D52B1E" y="4" width="9" height="2"/>
+        </svg>`;
+
+      const isMobile = window.innerWidth <= 860;
+      let currentLang = localStorage.getItem("multiCultiLang") || (isMobile ? "en" : "ru");
+
+      function setLanguage(lang) {
         if (lang === "ru") {
           document.body.classList.remove("lang-en");
           document.body.classList.add("lang-ru");
           document.documentElement.lang = "ru";
-          if (flagSpan) flagSpan.textContent = "🇷🇺";
+          if (flagIconContainer) flagIconContainer.innerHTML = svgRU;
           if (codeSpan) codeSpan.textContent = "RU";
         } else {
           document.body.classList.remove("lang-ru");
           document.body.classList.add("lang-en");
           document.documentElement.lang = "en";
-          if (flagSpan) flagSpan.textContent = "🇬🇧";
+          if (flagIconContainer) flagIconContainer.innerHTML = svgUK;
           if (codeSpan) codeSpan.textContent = "EN";
         }
         localStorage.setItem("multiCultiLang", lang);
       }
 
-      updateLanguage(currentLang);
+      setLanguage(currentLang);
 
       if (toggleBtn) {
         toggleBtn.addEventListener("click", () => {
           currentLang = currentLang === "en" ? "ru" : "en";
-          updateLanguage(currentLang);
+          setLanguage(currentLang);
         });
       }
 

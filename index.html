@@ -1,0 +1,1971 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Local SEO & Search Engine Optimization for Merseyside / Waterloo -->
+  <title>Multi-Culti Liverpool | Школа русского языка и творческого развития</title>
+  <meta name="description" content="Субботняя и вечерняя школа русского языка, чтения и творчества для детей-билингвов в Ливерпуле (Ватерлоо). Занятия от 3 лет, подготовка к GCSE, театр и праздники." />
+  <meta name="keywords" content="Russian school Liverpool, Русская школа Ливерпуль, Russian classes Waterloo, GCSE Russian Liverpool, Russian for bilingual children Merseyside" />
+  
+  <!-- Open Graph Social Sharing -->
+  <meta property="og:title" content="Multi-Culti Liverpool | Russian Language & Cultural School" />
+  <meta property="og:description" content="Nurturing bilingual fluency, speech development, and cultural education in Merseyside." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://multi-culti.co.uk" />
+
+  <!-- Typography: Warm Editorial Serif (Lora) + Full Cyrillic Geometric Sans (Manrope) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Multi-Stop Vertical Gradients */
+      --ru-grad-vertical: linear-gradient(180deg, #F0F9F4 0%, #D4EFE0 30%, #A8DEC0 65%, #70C496 100%);
+      --en-grad-vertical: linear-gradient(180deg, #FFF8F0 0%, #FEE5CC 30%, #FCC999 65%, #F5A866 100%);
+
+      /* Header & Organic Stem Tokens */
+      --header-bg: #FFD62C;         /* Brand Sunshine Yellow */
+      --header-height: 86px;        /* Fixed Banner Height */
+      --stem-color: #1B4332;        /* Dark Forest Green Botanical Stem */
+      --venue-bg: #93DDEA;          /* Fresh Seafoam Cyan Canvas */
+      --gallery-bg: #C6D1FF;        /* Soft Periwinkle Gallery Canvas */
+      --gallery-border: #D4DEFF;    /* 10% Lighter Harmonized Border */
+
+      /* Foreground Brand Tokens */
+      --ru-primary: #059669;        /* Vivid Emerald Green */
+      --en-primary: #EA580C;        /* Luminous Solar Orange */
+      --cta-btn: #BE2A84;           /* Vivid Purple Orchid */
+      --w3w-red: #E11F26;           /* what3words Red */
+
+      /* Unified Typography Metrics */
+      --lead-font-size: 0.96rem;
+      --lead-line-height: 1.55;
+
+      /* Surfaces, Borders & Deep Ambient Shadows */
+      --card-bg: #F4F7F5;           /* Tinted Box Canvas */
+      --card-border-ru: #A7F3D0;
+      --card-border-en: #FED7AA;
+      --card-fixed-height: 160px;   /* Compact 160px Box Height */
+      
+      --mission-card-height: 210px; /* Mission Card Height */
+      --vision-card-height: 280px;  /* Vision Card Height */
+
+      --text-main: #111827;
+      --text-muted: #374151;
+      --shadow-ambient: 0 16px 36px -8px rgba(28, 25, 23, 0.16), 0 8px 16px -4px rgba(28, 25, 23, 0.08);
+      --shadow-hover: 0 24px 48px -8px rgba(28, 25, 23, 0.22), 0 12px 24px -6px rgba(28, 25, 23, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--header-height);
+    }
+
+    /* Standard Header Offsets */
+    #about,
+    #gallery,
+    #contact {
+      scroll-margin-top: var(--header-height);
+    }
+
+    /* Further Scroll Offsets for Programs, Team & Venue */
+    #programs,
+    #team,
+    #venue {
+      scroll-margin-top: calc(var(--header-height) - 100px);
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      color: var(--text-main);
+      background-color: #F0F9F4;
+      line-height: 1.4;
+      padding-top: var(--header-height);
+    }
+
+    h1, h2, h3, .brand {
+      font-family: 'Lora', serif;
+      line-height: 1.25;
+    }
+
+    /* Accessibility Skip Link */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 10px;
+      background: var(--text-main);
+      color: #FFFFFF;
+      padding: 8px 14px;
+      z-index: 2000;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: top 0.2s ease;
+    }
+    .skip-link:focus {
+      top: 10px;
+    }
+
+    /* ============================================================
+       FIXED HEADER WITH STACKED BILINGUAL NAVIGATION
+       ============================================================ */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--header-height);
+      z-index: 1000;
+      background-color: var(--header-bg);
+      border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      padding: 0 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      z-index: 1020;
+    }
+
+    .header-logo-container {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1010;
+      pointer-events: auto;
+    }
+
+    .header-logo-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-decoration: none;
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    .header-logo-link:hover {
+      transform: scale(1.03);
+      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.12));
+    }
+
+    .header-logo-img {
+      height: 76px;
+      max-height: 90%;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1.15rem;
+      z-index: 1020;
+    }
+
+    /* Stacked Two-Line Nav Links */
+    .nav-link {
+      color: var(--cta-btn);
+      text-decoration: none;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.15;
+      padding: 0.2rem 0.25rem;
+      transition: opacity 0.15s ease, transform 0.15s ease;
+    }
+    .nav-link:hover {
+      opacity: 0.82;
+      transform: translateY(-1px);
+    }
+
+    .nav-text-ru {
+      font-weight: 800;
+      font-size: 0.84rem;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+    }
+
+    .nav-divider {
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(190, 42, 132, 0.32);
+      margin: 2px 0;
+      border-radius: 1px;
+    }
+
+    .nav-text-en {
+      font-weight: 600;
+      font-size: 0.7rem;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+      opacity: 0.9;
+    }
+
+    /* Stacked Two-Line CTA Button */
+    .btn-cta {
+      background: var(--cta-btn);
+      color: #FFFFFF;
+      padding: 0.45rem 1.1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-family: 'Manrope', sans-serif;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 4px 14px rgba(190, 42, 132, 0.3);
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.12;
+      margin-left: 0.15rem;
+    }
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(190, 42, 132, 0.45);
+    }
+
+    .btn-text-ru {
+      font-weight: 800;
+      font-size: 0.84rem;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+    }
+
+    .btn-divider {
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.45);
+      margin: 2px 0;
+      border-radius: 1px;
+    }
+
+    .btn-text-en {
+      font-weight: 600;
+      font-size: 0.7rem;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+      opacity: 0.95;
+    }
+
+    /* ============================================================
+       1. ABOUT US SECTION (MISSION & VISION)
+       ============================================================ */
+    .about-section {
+      background: #FFFFFF;
+      padding: 2.4rem 2rem 3.5rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    .about-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 4px;
+      background-color: var(--stem-color);
+      transform: translateX(-50%);
+      z-index: 5;
+      border-radius: 4px;
+    }
+
+    .about-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 6;
+    }
+
+    .about-main-intro-box {
+      text-align: center;
+      max-width: 756px;
+      margin: -20px auto 0.4rem;
+      background: #E6F0EB;
+      border: 2px solid rgba(27, 67, 50, 0.15);
+      border-radius: 18px;
+      padding: 1.25rem 2rem 1.1rem;
+      box-shadow: 0 8px 24px -6px rgba(27, 67, 50, 0.12);
+      position: relative;
+      z-index: 10;
+    }
+
+    .about-main-intro-title {
+      font-family: 'Lora', serif;
+      font-size: 1.48rem;
+      color: var(--stem-color);
+      line-height: 1.32;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+
+    .about-main-intro-sub {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: var(--ru-primary);
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    .floating-milestone-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #FFF4B8 0%, #FFD62C 60%, #E5B800 100%);
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 10px 25px -4px rgba(190, 42, 132, 0.35), 0 4px 12px rgba(27, 67, 50, 0.2);
+      text-align: center;
+      color: #1B4332;
+      text-decoration: none;
+      cursor: default;
+      user-select: none;
+      margin: 0.2rem auto -2.4rem;
+      position: relative;
+      z-index: 25;
+      animation: badgeFloat 2.8s ease-in-out infinite;
+      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+      padding: 0.5rem;
+    }
+
+    .floating-milestone-badge:hover {
+      transform: scale(1.08) rotate(-2deg);
+      box-shadow: 0 16px 32px -4px rgba(190, 42, 132, 0.45), 0 6px 16px rgba(27, 67, 50, 0.25);
+    }
+
+    .milestone-badge-main {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      line-height: 1.18;
+      color: #1B4332;
+    }
+
+    @keyframes badgeFloat {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-17px);
+      }
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .about-col-ru {
+      text-align: right;
+      padding-right: 1rem;
+    }
+
+    .about-col-en {
+      text-align: left;
+      padding-left: 1rem;
+    }
+
+    .about-badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 0.25rem 0.85rem;
+      border-radius: 50px;
+      margin-bottom: 0.8rem;
+    }
+
+    .about-col-ru .about-badge,
+    .team-header-ru .about-badge,
+    .venue-header .about-badge {
+      background: rgba(5, 150, 105, 0.12);
+      color: var(--ru-primary);
+    }
+
+    .about-col-en .about-badge,
+    .team-header-en .about-badge {
+      background: rgba(234, 88, 12, 0.12);
+      color: var(--en-primary);
+    }
+
+    .about-heading {
+      font-size: 1.8rem;
+      color: var(--stem-color);
+      margin-bottom: 0.65rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .hero-box p,
+    .about-lead {
+      font-size: var(--lead-font-size);
+      line-height: var(--lead-line-height);
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .about-lead {
+      margin-bottom: 1.8rem;
+    }
+
+    .values-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .value-card {
+      background: #EEF4F1;
+      border-radius: 14px;
+      padding: 1.3rem 1.5rem;
+      border: 1px solid rgba(27, 67, 50, 0.1);
+      overflow-y: auto;
+      scroll-behavior: smooth;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      scrollbar-width: thin;
+    }
+
+    .value-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px -4px rgba(27, 67, 50, 0.14);
+    }
+
+    .value-card::-webkit-scrollbar {
+      width: 4px;
+    }
+    .value-card::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.04);
+      border-radius: 8px;
+    }
+    .about-col-ru .value-card::-webkit-scrollbar-thumb {
+      background: var(--ru-primary);
+      border-radius: 8px;
+    }
+    .about-col-en .value-card::-webkit-scrollbar-thumb {
+      background: var(--en-primary);
+      border-radius: 8px;
+    }
+
+    .value-card-mission {
+      height: var(--mission-card-height);
+      border-left: 4px solid var(--ru-primary);
+    }
+    .about-col-ru .value-card-mission {
+      border-left: 1px solid rgba(27, 67, 50, 0.1);
+      border-right: 4px solid var(--ru-primary);
+    }
+
+    .value-card-vision {
+      height: var(--vision-card-height);
+      border-left: 4px solid var(--en-primary);
+    }
+    .about-col-ru .value-card-vision {
+      border-left: 1px solid rgba(27, 67, 50, 0.1);
+      border-right: 4px solid var(--en-primary);
+    }
+
+    .value-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+    .about-col-ru .value-card-header {
+      justify-content: flex-end;
+    }
+
+    .value-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--stem-color);
+    }
+
+    .value-title {
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.35rem;
+      font-family: 'Lora', serif;
+    }
+
+    .value-text {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ============================================================
+       2. PROGRAMS & GROUPS SECTION
+       ============================================================ */
+    .split-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      min-height: auto;
+      border-top: 3px solid rgba(27, 67, 50, 0.1);
+      border-bottom: 3px solid rgba(27, 67, 50, 0.1);
+    }
+
+    .split-main::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 4px;
+      background-color: var(--stem-color);
+      transform: translateX(-50%);
+      z-index: 5;
+      border-radius: 4px;
+    }
+
+    .column-ru {
+      background: var(--ru-grad-vertical);
+      padding: 2.2rem 3.5rem 3.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1.8rem;
+    }
+
+    .column-en {
+      background: var(--en-grad-vertical);
+      padding: 2.2rem 3.5rem 3.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.8rem;
+    }
+
+    .hero-box {
+      max-width: 490px;
+      width: 100%;
+      margin-bottom: 0.15rem;
+    }
+    .column-ru .hero-box { text-align: right; }
+    .column-en .hero-box { text-align: left; }
+
+    .hero-box h2 {
+      font-size: 2.15rem;
+      margin-bottom: 0.65rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .column-ru .hero-box h2 { color: var(--ru-primary); }
+    .column-en .hero-box h2 { color: var(--en-primary); }
+
+    .card {
+      background-color: var(--card-bg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 16px;
+      box-shadow: var(--shadow-ambient);
+      position: relative;
+      isolation: isolate;
+      max-width: 490px;
+      width: 100%;
+      height: var(--card-fixed-height);
+      overflow: visible;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card-scroll {
+      height: 100%;
+      width: 100%;
+      padding: 0.8rem 1.15rem 0.65rem;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+      border-radius: 16px;
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.85);
+      scrollbar-width: none;
+    }
+    .card-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card-ru {
+      border: 1px solid var(--card-border-ru);
+      border-right: 6px solid var(--ru-primary);
+      text-align: right;
+    }
+
+    .card-en {
+      border: 1px solid var(--card-border-en);
+      border-left: 6px solid var(--en-primary);
+      text-align: left;
+    }
+
+    .card-ru::after {
+      content: '';
+      position: absolute;
+      top: 65px;
+      right: -64px;
+      width: 62px;
+      height: 30px;
+      border-top: 3px solid var(--stem-color);
+      border-right: 3px solid var(--stem-color);
+      border-top-right-radius: 28px;
+      border-top-left-radius: 2px;
+      border-bottom-right-radius: 2px;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .card-en::after {
+      content: '';
+      position: absolute;
+      top: 65px;
+      left: -64px;
+      width: 62px;
+      height: 30px;
+      border-top: 3px solid var(--stem-color);
+      border-left: 3px solid var(--stem-color);
+      border-top-left-radius: 28px;
+      border-top-right-radius: 2px;
+      border-bottom-left-radius: 2px;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .card-header-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.6rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .card-ru .card-header-row {
+      flex-direction: row-reverse;
+    }
+
+    .card-en .card-header-row {
+      flex-direction: row;
+    }
+
+    .card-header-row h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin: 0;
+      flex: 1;
+    }
+    .card-ru .card-header-row h3 { color: var(--ru-primary); text-align: right; }
+    .card-en .card-header-row h3 { color: var(--en-primary); text-align: left; }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.12rem 0.55rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: #FFFFFF;
+      text-shadow: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .tag-green { background: var(--ru-primary); }
+    .tag-orange { background: var(--en-primary); }
+
+    .card-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.26;
+      font-weight: 500;
+    }
+
+    .card-list {
+      margin: 0.25rem 0 0;
+      padding-left: 1.1rem;
+      list-style-type: disc;
+    }
+
+    .card-ru .card-list {
+      padding-left: 0;
+      padding-right: 1.1rem;
+      text-align: right;
+      direction: rtl;
+    }
+
+    .card-ru .card-list li {
+      direction: ltr;
+    }
+
+    .card-en .card-list {
+      text-align: left;
+    }
+
+    .card-list li {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.25;
+      margin-bottom: 0.15rem;
+    }
+
+    .card-ru .card-list li::marker {
+      color: var(--ru-primary);
+    }
+
+    .card-en .card-list li::marker {
+      color: var(--en-primary);
+    }
+
+    /* ============================================================
+       3. WHO WE ARE (TEACHERS & FOUNDERS)
+       ============================================================ */
+    .team-section {
+      background: #FFFFFF;
+      padding: 2.4rem 2rem 4rem;
+      position: relative;
+      z-index: 10;
+    }
+
+    .team-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 4px;
+      background-color: var(--stem-color);
+      transform: translateX(-50%);
+      z-index: 5;
+      border-radius: 4px;
+    }
+
+    .team-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 6;
+    }
+
+    .team-headers-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .team-header-ru {
+      text-align: right;
+      padding-right: 1rem;
+    }
+
+    .team-header-en {
+      text-align: left;
+      padding-left: 1rem;
+    }
+
+    .team-header-ru .about-badge,
+    .team-header-en .about-badge {
+      margin-bottom: 0.55rem;
+    }
+
+    .team-header-ru .about-lead,
+    .team-header-en .about-lead {
+      margin-bottom: 1.08rem;
+    }
+
+    .team-cards-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.2rem 4rem;
+      align-items: stretch;
+    }
+
+    .member-card {
+      background: #EEF4F1;
+      border-radius: 20px;
+      padding: 2.2rem 1.8rem 2rem;
+      border: 1px solid rgba(27, 67, 50, 0.1);
+      box-shadow: var(--shadow-ambient);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      justify-content: flex-start;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .member-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .member-card-ru {
+      border-top: 5px solid var(--ru-primary);
+    }
+
+    .member-card-en {
+      border-top: 5px solid var(--en-primary);
+    }
+
+    .member-avatar-wrap {
+      width: 136px;
+      height: 136px;
+      flex: 0 0 136px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #E2E8F0;
+      border: 4px solid var(--header-bg);
+      box-shadow: 0 6px 16px rgba(27, 67, 50, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      margin: 0 auto 1.4rem;
+    }
+
+    .member-avatar-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .member-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+    }
+
+    .member-name {
+      font-family: 'Lora', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--stem-color);
+      margin-bottom: 0.25rem;
+    }
+
+    .member-role {
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .member-card-ru .member-role { color: var(--ru-primary); }
+    .member-card-en .member-role { color: var(--en-primary); }
+
+    .member-bio {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin-bottom: 1.2rem;
+      max-width: 430px;
+      flex: 1;
+    }
+
+    .member-badge {
+      display: inline-block;
+      font-size: 0.74rem;
+      font-weight: 700;
+      background: rgba(27, 67, 50, 0.08);
+      color: var(--stem-color);
+      padding: 0.35rem 0.85rem;
+      border-radius: 50px;
+      border: 1px solid rgba(27, 67, 50, 0.1);
+      margin-top: auto;
+    }
+
+    /* ============================================================
+       4. VENUE & TIMETABLE SECTION (BG: #93DDEA + LIGHT GREEN HEADER BOX)
+       ============================================================ */
+    .venue-section {
+      background: var(--venue-bg);
+      padding: 3.2rem 2rem 4rem;
+      border-top: 3px solid rgba(27, 67, 50, 0.1);
+      position: relative;
+      z-index: 10;
+    }
+
+    .venue-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 4px;
+      background-color: var(--stem-color);
+      transform: translateX(-50%);
+      z-index: 5;
+      border-radius: 4px;
+    }
+
+    .venue-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 6;
+    }
+
+    /* Enclosed Light Green Header Box (Harmonized with Section 1) */
+    .venue-header-box {
+      text-align: center;
+      max-width: 756px;
+      margin: 0 auto 2.2rem;
+      background: #E6F0EB; /* Matched to Section 1 Tagline Box */
+      border: 2px solid rgba(27, 67, 50, 0.15);
+      border-radius: 18px;
+      padding: 1.3rem 2rem;
+      box-shadow: 0 8px 24px -6px rgba(27, 67, 50, 0.12);
+      position: relative;
+      z-index: 10;
+    }
+
+    .venue-badge {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 0.2rem 0.75rem;
+      border-radius: 50px;
+      background: rgba(27, 67, 50, 0.1);
+      color: var(--stem-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .venue-main-title {
+      font-family: 'Lora', serif;
+      font-size: 1.55rem;
+      color: var(--stem-color);
+      line-height: 1.3;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+
+    .venue-main-sub {
+      font-size: var(--lead-font-size);
+      line-height: var(--lead-line-height);
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .venue-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 2.4rem;
+      align-items: stretch;
+      margin-bottom: 2.2rem;
+    }
+
+    .venue-map-card {
+      background: #FFFFFF;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(27, 67, 50, 0.14);
+      box-shadow: var(--shadow-ambient);
+      min-height: 420px;
+      height: 100%;
+    }
+
+    .venue-map-frame {
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      border: 0;
+      display: block;
+    }
+
+    .venue-info-card {
+      background: #FFFFFF;
+      border-radius: 20px;
+      padding: 2.2rem 2rem;
+      border: 1px solid rgba(27, 67, 50, 0.14);
+      box-shadow: var(--shadow-ambient);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .venue-info-block {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.1rem;
+    }
+
+    .venue-info-icon {
+      font-size: 1.5rem;
+      line-height: 1;
+      background: #EEF4F1;
+      padding: 0.65rem;
+      border-radius: 12px;
+      border: 1px solid rgba(27, 67, 50, 0.1);
+      flex-shrink: 0;
+    }
+
+    .venue-info-title {
+      font-family: 'Lora', serif;
+      font-size: 1.12rem;
+      color: var(--stem-color);
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .venue-info-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .venue-info-sub {
+      font-size: 0.82rem;
+      color: var(--ru-primary);
+      font-weight: 700;
+    }
+
+    .w3w-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      color: var(--w3w-red);
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.88rem;
+      margin-top: 0.35rem;
+      transition: opacity 0.15s ease;
+    }
+    .w3w-link:hover {
+      text-decoration: underline;
+      opacity: 0.85;
+    }
+
+    /* While You Wait / Parents Lounge Card */
+    .venue-parents-box {
+      background: #FFFFFF;
+      border-radius: 20px;
+      padding: 2rem 2.2rem;
+      border: 1px solid rgba(27, 67, 50, 0.14);
+      box-shadow: var(--shadow-ambient);
+    }
+
+    .venue-parents-header {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      margin-bottom: 1.4rem;
+      border-bottom: 1px dashed rgba(27, 67, 50, 0.15);
+      padding-bottom: 0.8rem;
+    }
+
+    .venue-parents-icon {
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+
+    .venue-parents-title {
+      font-family: 'Lora', serif;
+      font-size: 1.22rem;
+      color: var(--stem-color);
+      font-weight: 700;
+    }
+
+    .venue-parents-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .venue-place-card {
+      background: #F8FAF9;
+      border: 1px solid rgba(27, 67, 50, 0.1);
+      border-radius: 14px;
+      padding: 1.15rem 1.25rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+    .venue-place-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px -4px rgba(27, 67, 50, 0.14);
+      background: #FFFFFF;
+    }
+
+    .venue-place-link {
+      text-decoration: none;
+      display: block;
+      color: inherit;
+    }
+
+    .venue-place-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--ru-primary);
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+
+    .venue-place-name {
+      font-family: 'Lora', serif;
+      font-size: 1.05rem;
+      color: var(--text-main);
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: color 0.15s ease;
+    }
+    .venue-place-link:hover .venue-place-name {
+      color: var(--cta-btn);
+    }
+
+    .venue-place-ext {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      opacity: 0.6;
+      transition: opacity 0.15s ease, transform 0.15s ease;
+    }
+    .venue-place-link:hover .venue-place-ext {
+      opacity: 1;
+      transform: translate(2px, -2px);
+    }
+
+    .venue-place-address {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* ============================================================
+       5. GALLERY SECTION
+       ============================================================ */
+    .gallery-section {
+      background-color: var(--gallery-bg);
+      padding: 2.2rem 0 0.8rem;
+      border-top: 3px solid rgba(27, 67, 50, 0.12);
+      border-bottom: 3px solid rgba(27, 67, 50, 0.12);
+      position: relative;
+      z-index: 10;
+    }
+
+    .gallery-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 1.2rem;
+      padding: 0 1.5rem;
+    }
+
+    .gallery-header h2 {
+      font-size: 1.7rem;
+      color: var(--stem-color);
+      margin-bottom: 0.25rem;
+    }
+
+    .gallery-header p {
+      font-size: 0.92rem;
+      color: #1F2937;
+    }
+
+    .gallery-track {
+      display: flex;
+      gap: 0.55rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 0.2rem 2.5rem 0.6rem;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+    }
+
+    .gallery-track::-webkit-scrollbar {
+      height: 4px;
+    }
+    .gallery-track::-webkit-scrollbar-track {
+      background: rgba(27, 67, 50, 0.08);
+      border-radius: 10px;
+    }
+    .gallery-track::-webkit-scrollbar-thumb {
+      background: var(--stem-color);
+      border-radius: 10px;
+    }
+
+    .gallery-item {
+      flex: 0 0 232px;
+      height: 160px;
+      position: relative;
+      scroll-snap-align: start;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px -3px rgba(27, 67, 50, 0.18);
+      border: 3px solid var(--gallery-border);
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      background: #FFFFFF;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(27, 67, 50, 0) 15%, rgba(27, 67, 50, 0.92) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0.75rem 0.85rem;
+      color: #FFFFFF;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.25s ease, transform 0.25s ease;
+      pointer-events: none;
+    }
+
+    .gallery-overlay-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #FFD62C;
+      margin-bottom: 0.15rem;
+    }
+
+    .gallery-overlay-sub {
+      font-size: 0.72rem;
+      color: #E2E8F0;
+      line-height: 1.2;
+    }
+
+    .gallery-item:hover,
+    .gallery-item:focus-within {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px -5px rgba(27, 67, 50, 0.28);
+      border-color: #FFFFFF;
+    }
+
+    .gallery-item:hover img,
+    .gallery-item:focus-within img {
+      transform: scale(1.06);
+    }
+
+    .gallery-item:hover .gallery-overlay,
+    .gallery-item:focus-within .gallery-overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ============================================================
+       6. CONTACT FOOTER
+       ============================================================ */
+    .contact-section {
+      background: linear-gradient(135deg, #1B4332 0%, #153326 100%);
+      color: #FFFFFF;
+      padding: 2.2rem 1.5rem 1.6rem;
+      position: relative;
+      z-index: 10;
+      border-top: 3px solid var(--header-bg);
+    }
+
+    .contact-container {
+      max-width: 880px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contact-container h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.25rem;
+      color: #FFD62C;
+    }
+
+    .contact-subtitle {
+      font-size: 0.9rem;
+      color: #D1E7DD;
+      margin-bottom: 1.2rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 12px;
+      padding: 1rem 1.2rem;
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .contact-card:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .contact-card-icon {
+      font-size: 1.35rem;
+      display: inline-block;
+      line-height: 1;
+    }
+
+    .contact-social-img {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 4px;
+    }
+
+    .contact-card a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      word-break: break-word;
+      transition: color 0.15s ease;
+    }
+    .contact-card a:hover {
+      color: #FED7AA;
+      text-decoration: underline;
+    }
+
+    .contact-footer-note {
+      font-size: 0.8rem;
+      color: #A3CFBB;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Responsive Mobile Layout */
+    @media (max-width: 860px) {
+      header {
+        padding: 0 0.8rem;
+      }
+      .header-logo-container {
+        position: static;
+        transform: none;
+        height: auto;
+      }
+      .header-logo-img {
+        height: 48px;
+      }
+      .nav-left {
+        display: none;
+      }
+      .nav-right {
+        gap: 0.7rem;
+      }
+      .nav-text-ru, .btn-text-ru {
+        font-size: 0.75rem;
+      }
+      .nav-text-en, .btn-text-en {
+        font-size: 0.64rem;
+      }
+      .btn-cta {
+        padding: 0.35rem 0.8rem;
+      }
+      .split-main {
+        grid-template-columns: 1fr;
+      }
+      .split-main::before,
+      .about-section::before,
+      .team-section::before,
+      .venue-section::before {
+        display: none;
+      }
+      .column-ru, .column-en {
+        padding: 2rem 1.5rem;
+        align-items: flex-start !important;
+        gap: 1.5rem;
+      }
+      .hero-box {
+        text-align: left !important;
+      }
+      .card {
+        height: auto;
+        min-height: 140px;
+      }
+      .card-scroll {
+        height: auto;
+        padding: 1rem;
+      }
+      .card-ru::after, .card-en::after {
+        display: none;
+      }
+      .card-ru, .card-en {
+        text-align: left;
+        border-right: 1px solid var(--card-border-ru);
+        border-left: 6px solid var(--ru-primary);
+      }
+      .card-en {
+        border-left-color: var(--en-primary);
+        border-right-color: var(--card-border-en);
+      }
+      .card-ru .card-header-row, .card-en .card-header-row {
+        flex-direction: row;
+      }
+      .card-ru .card-header-row h3 {
+        text-align: left;
+      }
+      .about-main-intro-box {
+        padding: 1.2rem 1.2rem;
+        margin: -10px auto 1rem;
+      }
+      .about-main-intro-title {
+        font-size: 1.2rem;
+      }
+      .floating-milestone-badge {
+        margin: 0.5rem auto 1rem;
+        animation: none;
+      }
+      .about-grid, .team-headers-grid, .team-cards-grid, .venue-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .venue-header-box {
+        padding: 1.1rem 1.2rem;
+        margin-bottom: 1.5rem;
+      }
+      .venue-main-title {
+        font-size: 1.25rem;
+      }
+      .venue-map-card {
+        min-height: 280px;
+      }
+      .venue-info-card {
+        padding: 1.6rem 1.4rem;
+        gap: 1.3rem;
+      }
+      .venue-parents-box {
+        padding: 1.5rem 1.3rem;
+      }
+      .venue-parents-grid {
+        grid-template-columns: 1fr;
+      }
+      .about-col-ru, .team-header-ru {
+        text-align: left !important;
+        padding-right: 0;
+        border-bottom: 2px solid rgba(27, 67, 50, 0.08);
+        padding-bottom: 1.5rem;
+      }
+      .about-col-ru .value-card-header {
+        justify-content: flex-start;
+      }
+      .about-col-ru .value-card-mission,
+      .about-col-ru .value-card-vision {
+        border-right: 1px solid rgba(27, 67, 50, 0.08);
+        border-left: 4px solid var(--ru-primary);
+      }
+      .about-col-ru .value-card-vision {
+        border-left-color: var(--en-primary);
+      }
+      .value-card-mission,
+      .value-card-vision {
+        height: auto;
+        min-height: 180px;
+      }
+      .gallery-track {
+        padding: 0.2rem 1.5rem 0.6rem;
+      }
+      .gallery-item {
+        flex: 0 0 200px;
+        height: 135px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#about" class="skip-link">Перейти к контенту / Skip to content</a>
+
+  <!-- Fixed Navigation Banner with Stacked Dual-Language Links -->
+  <header>
+    <div class="nav-left">
+      <a href="#about" class="nav-link">
+        <span class="nav-text-ru">О нас</span>
+        <span class="nav-divider"></span>
+        <span class="nav-text-en">About Us</span>
+      </a>
+      <a href="#programs" class="nav-link">
+        <span class="nav-text-ru">Программы</span>
+        <span class="nav-divider"></span>
+        <span class="nav-text-en">Programs</span>
+      </a>
+    </div>
+
+    <div class="header-logo-container">
+      <a href="#" class="header-logo-link" aria-label="Multi-Culti Hub Home">
+        <img src="images/logo_3_transparent.png" alt="Multi-Culti Hub Logo" class="header-logo-img" />
+      </a>
+    </div>
+
+    <div class="nav-right">
+      <a href="#team" class="nav-link">
+        <span class="nav-text-ru">Команда</span>
+        <span class="nav-divider"></span>
+        <span class="nav-text-en">Team</span>
+      </a>
+      <a href="#venue" class="nav-link">
+        <span class="nav-text-ru">Локация</span>
+        <span class="nav-divider"></span>
+        <span class="nav-text-en">Venue</span>
+      </a>
+      <a href="#gallery" class="nav-link">
+        <span class="nav-text-ru">Галерея</span>
+        <span class="nav-divider"></span>
+        <span class="nav-text-en">Gallery</span>
+      </a>
+      <a href="#contact" class="nav-link">
+        <span class="nav-text-ru">Контакты</span>
+        <span class="nav-divider"></span>
+        <span class="nav-text-en">Contact</span>
+      </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSjNjpZpZkEj8Wy4Nf4Dxqr7oqnb6S6152R-9N59a52cVdZQ/viewform" target="_blank" rel="noopener noreferrer" class="btn-cta">
+        <span class="btn-text-ru">Записаться</span>
+        <span class="btn-divider"></span>
+        <span class="btn-text-en">Register</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- 1. ABOUT US SECTION (MISSION & VISION) -->
+  <section id="about" class="about-section" aria-label="О нас / About Us">
+    <div class="about-container">
+
+      <!-- Compact Raised Intro Tagline Box -->
+      <div class="about-main-intro-box" id="aboutMainIntro"></div>
+
+      <!-- Floating Milestone Badge Centered Between Tags and Headings -->
+      <aside class="floating-milestone-badge" aria-label="Multi-Culti: 2 ГОДА ВМЕСТЕ!">
+        <span class="milestone-badge-main">2 ГОДА ВМЕСТЕ!</span>
+      </aside>
+
+      <!-- Core Story & Mission/Vision Grid -->
+      <div class="about-grid">
+        <div class="about-col-ru" id="aboutRu"></div>
+        <div class="about-col-en" id="aboutEn"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 2. OUR PROGRAMS AND GROUPS SECTION -->
+  <main id="programs" class="split-main" aria-label="Наши программы / Our Programs">
+    
+    <!-- Left Column (Russian / Emerald Growth Gradient) -->
+    <section class="column-ru" id="columnRu" aria-label="Информация о программах на русском">
+      <div class="hero-box">
+        <h2>Русский язык и творчество в Ливерпуле</h2>
+        <p>В Multi-Culti мы распределяем детей по группам не только по возрасту, но и по уровню владения русским языком. Такой подход позволяет каждому ребёнку заниматься в комфортной среде, чувствовать уверенность в своих силах и двигаться вперёд в собственном темпе.</p>
+      </div>
+    </section>
+
+    <!-- Right Column (English / Amber Sun Gradient) -->
+    <section class="column-en" id="columnEn" aria-label="English Programs Information">
+      <div class="hero-box">
+        <h2>Russian Language &<br>Arts in Liverpool</h2>
+        <p>At Multi-Culti, we group children not only by age but also by their Russian language proficiency level. This tailored approach ensures every child learns in a supportive environment, builds confidence, and progresses at their own natural pace.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 3. WHO WE ARE (TEACHERS & FOUNDERS) -->
+  <section id="team" class="team-section" aria-label="Наша команда / Who We Are">
+    <div class="team-container">
+      <div class="team-headers-grid">
+        <div class="team-header-ru" id="teamHeaderRu"></div>
+        <div class="team-header-en" id="teamHeaderEn"></div>
+      </div>
+
+      <div class="team-cards-grid" id="teamCardsGrid"></div>
+    </div>
+  </section>
+
+  <!-- 4. VENUE & FRIDAY TIMETABLE SECTION -->
+  <section id="venue" class="venue-section" aria-label="Место проведения и расписание / Venue & Schedule">
+    <div class="venue-container">
+      
+      <!-- Enclosed Light Green Header Box (Matched to Section 1) -->
+      <div class="venue-header-box">
+        <span class="venue-badge">Локация и время / Location & Schedule</span>
+        <h2 class="venue-main-title">Как нас найти / Where to Find Us</h2>
+        <p class="venue-main-sub">Занятия проходят по пятницам в уютном центре Waterloo Community Centre (Ливерпуль)</p>
+      </div>
+
+      <div class="venue-grid">
+        <!-- Left Column: Interactive Map -->
+        <div class="venue-map-card">
+          <iframe
+            class="venue-map-frame"
+            title="Multi-Culti Waterloo Location Map"
+            src="https://maps.google.com/maps?q=Waterloo%20Community%20Centre,%2026%20Great%20Georges%20Rd,%20Waterloo,%20Liverpool%20L22%201RD&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Right Column: Location & Public Transit Card -->
+        <div class="venue-info-card">
+          <div class="venue-info-block">
+            <div class="venue-info-icon" aria-hidden="true">📍</div>
+            <div>
+              <h3 class="venue-info-title">Адрес / Address</h3>
+              <p class="venue-info-text">
+                <strong>Waterloo Community Centre</strong><br>
+                26 Great Georges Rd, Waterloo, Liverpool L22 1RD<br>
+                <a href="https://what3words.com/gangs.fight.quiz" target="_blank" rel="noopener noreferrer" class="w3w-link">
+                  ///gangs.fight.quiz
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="venue-info-block">
+            <div class="venue-info-icon" aria-hidden="true">⏰</div>
+            <div>
+              <h3 class="venue-info-title">Время занятий / Session Hours</h3>
+              <p class="venue-info-text">
+                <strong>Пятница / Friday:</strong> 17:45 – 19:00<br>
+                <span class="venue-info-sub">Групповые модули и творческие мастерские</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="venue-info-block">
+            <div class="venue-info-icon" aria-hidden="true">🚌</div>
+            <div>
+              <h3 class="venue-info-title">Транспорт и парковка / Transit & Parking</h3>
+              <p class="venue-info-text">
+                <strong>Waterloo Interchange (Bus & Rail):</strong> всего <strong>3–4 мин пешком (~250 м)</strong>.<br>
+                Бесплатная парковка вдоль улицы Great Georges Rd.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parents Waiting Places / Direct Interactive Map Cards -->
+      <div class="venue-parents-box">
+        <div class="venue-parents-header">
+          <span class="venue-parents-icon" aria-hidden="true">☕</span>
+          <h3 class="venue-parents-title">Где провести время родителям / While you wait your child...</h3>
+        </div>
+
+        <div class="venue-parents-grid">
+          <!-- The Lake House Waterloo -->
+          <div class="venue-place-card">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=The+Lake+House+Waterloo+Cambridge+Rd+Liverpool+L22+1RR"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="venue-place-link"
+              aria-label="The Lake House Waterloo on Google Maps">
+              <span class="venue-place-tag">Кафе у озера / Lakeside Café <br>(~5 мин пешком)</span>
+              <h4 class="venue-place-name">
+                The Lake House Waterloo
+                <span class="venue-place-ext" aria-hidden="true">↗</span>
+              </h4>
+              <p class="venue-place-address">Cambridge Rd, Waterloo, Liverpool L22 1RR</p>
+            </a>
+          </div>
+
+          <!-- The Royal Hotel -->
+          <div class="venue-place-card">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=The+Royal+Hotel+Marine+Terrace+Waterloo+Liverpool+L22+5PR"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="venue-place-link"
+              aria-label="The Royal Hotel on Google Maps">
+              <span class="venue-place-tag">Отель и ресторан / Historic Lounge <br>(~6 мин пешком)</span>
+              <h4 class="venue-place-name">
+                The Royal Hotel
+                <span class="venue-place-ext" aria-hidden="true">↗</span>
+              </h4>
+              <p class="venue-place-address">Marine Terrace, Waterloo, Liverpool L22 5PR</p>
+            </a>
+          </div>
+
+          <!-- The Victoria Hotel & Pub -->
+          <div class="venue-place-card">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=The+Victoria+Hotel+and+Pub+27+Bath+St+Waterloo+Liverpool+L22+5PS"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="venue-place-link"
+              aria-label="The Victoria Hotel and Pub on Google Maps">
+              <span class="venue-place-tag">Традиционный паб / Traditional Pub <br>(~5 мин пешком)</span>
+              <h4 class="venue-place-name">
+                The Victoria Hotel and Pub
+                <span class="venue-place-ext" aria-hidden="true">↗</span>
+              </h4>
+              <p class="venue-place-address">27 Bath St, Waterloo, Liverpool L22 5PS</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. GALLERY SECTION -->
+  <section id="gallery" class="gallery-section" aria-label="Наши занятия / Our Lessons in Action">
+    <div class="gallery-header">
+      <h2>Жизнь школы / Life at Multi-Culti</h2>
+      <p>Творческие уроки, праздники, театр и живое общение на русском языке в Ватерлоо (Ливерпуль)</p>
+    </div>
+
+    <div class="gallery-track" id="galleryTrack"></div>
+  </section>
+
+  <!-- 6. CONTACT INFORMATION & FOOTER -->
+  <footer id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2>Свяжитесь с нами / Contact Us</h2>
+      <p class="contact-subtitle">Мы всегда рады ответить на ваши вопросы и пригласить на пробное занятие в Ливерпуле</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="contact-card-icon" aria-hidden="true">✉️</span>
+          <a href="mailto:multiculti.hub@gmail.com" aria-label="Email: multiculti.hub@gmail.com">multiculti.hub@gmail.com</a>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-card-icon" aria-hidden="true">📞</span>
+          <a href="tel:07388027615" aria-label="Phone: 07388 027615">07388 027615</a>
+        </div>
+
+        <div class="contact-card">
+          <img src="images/Facebook_Logo_Primary.png" alt="Facebook" class="contact-social-img" />
+          <a href="https://www.facebook.com/russianlanguageliverpool" target="_blank" rel="noopener noreferrer" aria-label="Facebook: Multi-Culti Liverpool">Multi-Culti Liverpool</a>
+        </div>
+      </div>
+
+      <p class="contact-footer-note">
+        &copy; 2024-2026 Multi-Culti Hub. Waterloo Community Centre, 26 Great Georges Rd, Waterloo, Liverpool L22 1RD. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- External Data Scripts -->
+  <script src="programs-data.js"></script>
+  <script src="about-data.js"></script>
+  <script src="team-data.js"></script>
+  <script src="gallery-data.js"></script>
+
+  <!-- Dynamic Content Renderers -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Render About Us, Mission & Vision (Top Section)
+      if (typeof aboutData !== "undefined") {
+        const mainIntroBox = document.getElementById("aboutMainIntro");
+        const aboutRu = document.getElementById("aboutRu");
+        const aboutEn = document.getElementById("aboutEn");
+
+        if (mainIntroBox && aboutData.mainIntro) {
+          mainIntroBox.innerHTML = `
+            <h2 class="about-main-intro-title">«${aboutData.mainIntro.ru}»</h2>
+            <div class="about-main-intro-sub">${aboutData.mainIntro.en}</div>
+          `;
+        }
+
+        const renderAboutCol = (data) => `
+          <span class="about-badge">${data.badge}</span>
+          <h2 class="about-heading">${data.heading}</h2>
+          <p class="about-lead">${data.lead}</p>
+          <div class="values-container">
+            <div class="value-card value-card-mission">
+              <div class="value-card-header">
+                <span>${data.mission.icon}</span>
+                <span class="value-tag">${data.mission.tag}</span>
+              </div>
+              <h3 class="value-title">${data.mission.title}</h3>
+              <p class="value-text">${data.mission.text}</p>
+            </div>
+            <div class="value-card value-card-vision">
+              <div class="value-card-header">
+                <span>${data.vision.icon}</span>
+                <span class="value-tag">${data.vision.tag}</span>
+              </div>
+              <h3 class="value-title">${data.vision.title}</h3>
+              <p class="value-text">${data.vision.text}</p>
+            </div>
+          </div>
+        `;
+
+        if (aboutRu && aboutData.ru) aboutRu.innerHTML = renderAboutCol(aboutData.ru);
+        if (aboutEn && aboutData.en) aboutEn.innerHTML = renderAboutCol(aboutData.en);
+      }
+
+      // 2. Render Program Cards
+      if (typeof programsData !== "undefined") {
+        const ruContainer = document.getElementById("columnRu");
+        const enContainer = document.getElementById("columnEn");
+
+        const createCardHTML = (item, sideClass) => {
+          const opacity = item.bgOpacity !== undefined ? item.bgOpacity : 0.55;
+          const bgStyle = item.bgImage 
+            ? `style="background-image: linear-gradient(rgba(244, 247, 245, ${opacity}), rgba(244, 247, 245, ${opacity})), url('${item.bgImage}');"`
+            : "";
+          return `
+            <div class="card ${sideClass}" ${bgStyle}>
+              <div class="card-scroll">
+                <div class="card-header-row">
+                  <h3>${item.title}</h3>
+                  <span class="tag ${item.tagClass}">${item.tag}</span>
+                </div>
+                <div class="card-desc">${item.description}</div>
+              </div>
+            </div>
+          `;
+        };
+
+        if (ruContainer && Array.isArray(programsData.ru)) {
+          ruContainer.innerHTML += programsData.ru.map(item => createCardHTML(item, "card-ru")).join("");
+        }
+
+        if (enContainer && Array.isArray(programsData.en)) {
+          enContainer.innerHTML += programsData.en.map(item => createCardHTML(item, "card-en")).join("");
+        }
+      }
+
+      // 3. Render Symmetrically Aligned Teachers & Founders Grid (Who We Are)
+      if (typeof teamData !== "undefined") {
+        const headerRu = document.getElementById("teamHeaderRu");
+        const headerEn = document.getElementById("teamHeaderEn");
+        const cardsGrid = document.getElementById("teamCardsGrid");
+
+        if (headerRu && teamData.ru) {
+          headerRu.innerHTML = `
+            <span class="about-badge">${teamData.ru.badge}</span>
+            <h2 class="about-heading">${teamData.ru.heading}</h2>
+            <p class="about-lead">${teamData.ru.lead}</p>
+          `;
+        }
+
+        if (headerEn && teamData.en) {
+          headerEn.innerHTML = `
+            <span class="about-badge">${teamData.en.badge}</span>
+            <h2 class="about-heading">${teamData.en.heading}</h2>
+            <p class="about-lead">${teamData.en.lead}</p>
+          `;
+        }
+
+        if (cardsGrid && Array.isArray(teamData.ru.members) && Array.isArray(teamData.en.members)) {
+          let pairedHTML = "";
+          const memberCount = Math.max(teamData.ru.members.length, teamData.en.members.length);
+
+          for (let i = 0; i < memberCount; i++) {
+            const mRu = teamData.ru.members[i];
+            const mEn = teamData.en.members[i];
+
+            if (mRu) {
+              pairedHTML += `
+                <div class="member-card member-card-ru">
+                  <div class="member-avatar-wrap">
+                    ${mRu.image 
+                      ? `<img src="${mRu.image}" alt="${mRu.name}" class="member-avatar-img" />` 
+                      : `<span>👩‍🏫</span>`
+                    }
+                  </div>
+                  <div class="member-content">
+                    <h3 class="member-name">${mRu.name}</h3>
+                    <div class="member-role">${mRu.role}</div>
+                    <p class="member-bio">${mRu.bio}</p>
+                    <span class="member-badge">${mRu.badge}</span>
+                  </div>
+                </div>
+              `;
+            }
+
+            if (mEn) {
+              pairedHTML += `
+                <div class="member-card member-card-en">
+                  <div class="member-avatar-wrap">
+                    ${mEn.image 
+                      ? `<img src="${mEn.image}" alt="${mEn.name}" class="member-avatar-img" />` 
+                      : `<span>👩‍🏫</span>`
+                    }
+                  </div>
+                  <div class="member-content">
+                    <h3 class="member-name">${mEn.name}</h3>
+                    <div class="member-role">${mEn.role}</div>
+                    <p class="member-bio">${mEn.bio}</p>
+                    <span class="member-badge">${mEn.badge}</span>
+                  </div>
+                </div>
+              `;
+            }
+          }
+          cardsGrid.innerHTML = pairedHTML;
+        }
+      }
+
+      // 4. Render Gallery Cards
+      const galleryTrack = document.getElementById("galleryTrack");
+      if (typeof galleryData !== "undefined" && Array.isArray(galleryData) && galleryTrack) {
+        galleryTrack.innerHTML = galleryData.map(item => `
+          <div class="gallery-item" tabindex="0">
+            <img src="${item.image}" alt="${item.title}" loading="lazy" />
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-title">${item.title}</div>
+              <div class="gallery-overlay-sub">${item.subtitle}</div>
+            </div>
+          </div>
+        `).join("");
+      }
+    });
+  </script>
+
+</body>
+</html>

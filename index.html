@@ -6,12 +6,12 @@
   
   <!-- Primary Local SEO, Brand Identity & Exact Cyrillic Matching -->
   <title>Мульти Культи Ливерпуль | Русская школа, развитие речи и чтение для детей</title>
-  <meta name="description" content="Мульти Культи Ливерпуль — русская школа и клуб развития для детей-билингвов в Ватерлоо (Ливерпуль). Уроки на русском языке для ребёнка: развитие речи, чтение, письмо, театр, CLIL и подготовка к GCSE Russian." />
-  <meta name="keywords" content="Мульти Культи, Мульти-Культи Ливерпуль, МультиКульти, Русская школа Ливерпуль, Русская школа Мульти Культи, Русская школа Мульти-Культи, Уроки на русском для ребёнка в Ливерпуле, Multi-Culti Liverpool, Russian school Liverpool, русский язык для билингвов Ватерлоо, GCSE Russian Liverpool" />
+  <meta name="description" content="Мульти Культи Ливерпуль — образовательный центр и школа русского языка для билингвов. Языковые воркшопы для детей и родителей, чтение, развитие речи и bilingual education in Waterloo." />
+  <meta name="keywords" content="Мульти Культи, Мульти-Культи Ливерпуль, МультиКульти, Русская школа Ливерпуль, школа русского языка, образовательный центр, билингвы, bilingual education, russian bilingual school, russian bilingual school in liverpool, bilingual club for kids, russian language club for bilingual kids, language workshops for kids and parents, языковые воркшопы для детей и родителей, Уроки на русском для ребёнка в Ливерпуле, Multi-Culti Liverpool, Russian school Liverpool, русский язык для билингвов Ватерлоо, GCSE Russian" />
   <meta name="author" content="Multi-Culti Hub" />
   <link rel="canonical" href="https://multi-culti.co.uk/" />
 
-  <!-- Favicon & Browser Tab Icons (favicon.io Package) -->
+  <!-- Favicon & Browser Tab Icons -->
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -21,13 +21,16 @@
   <link rel="manifest" href="site.webmanifest" />
   <meta name="theme-color" content="#FFD62C" />
 
-  <!-- Geographic Location Directives (Waterloo Community Centre, L22 1RD) -->
+  <!-- Google Search Console Verification -->
+  <meta name="google-site-verification" content="google0248ccd9873c9d34" />
+
+  <!-- Geographic Location Directives -->
   <meta name="geo.region" content="GB-ENG" />
   <meta name="geo.placename" content="Waterloo, Liverpool" />
   <meta name="geo.position" content="53.4764;-3.0275" />
   <meta name="ICBM" content="53.4764, -3.0275" />
 
-  <!-- Open Graph / Social Sharing (WhatsApp, Telegram, Facebook, iMessage) -->
+  <!-- Open Graph / Social Sharing -->
   <meta property="og:locale" content="ru_RU" />
   <meta property="og:locale:alternate" content="en_GB" />
   <meta property="og:type" content="website" />
@@ -47,9 +50,6 @@
   <meta name="twitter:description" content="Русская школа Мульти-Культи: уроки русского языка, чтения и творчества для детей в Ливерпуле." />
   <meta name="twitter:image" content="https://multi-culti.co.uk/images/lesson_10.jpg" />
 
-  <!-- Google Search Console Verification -->
-  <meta name="google-site-verification" content="google0248ccd9873c9d34" />
-
   <!-- Structured Data / JSON-LD for Google Knowledge Graph & Local Cyrillic Queries -->
   <script type="application/ld+json">
   {
@@ -59,12 +59,12 @@
     "alternateName": [
       "Мульти Культи",
       "Мульти-Культи",
-      "МультиКульти",
+      "Школа русского языка Мульти Культи",
+      "Образовательный центр Мульти Культи",
       "Русская школа Ливерпуль",
-      "Русская школа Мульти Культи",
-      "Русская школа Мульти-Культи",
       "Multi-Culti Liverpool",
-      "MultiCulti Russian Language Hub"
+      "Russian bilingual school in Liverpool",
+      "Russian language club for bilingual kids"
     ],
     "url": "https://multi-culti.co.uk",
     "logo": "https://multi-culti.co.uk/images/logo_3_transparent.png",
@@ -126,1146 +126,238 @@
   }
   </script>
 
-  <!-- Typography: Editorial Serif (Lora) + Geometric Sans (Manrope) -->
+  <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      /* Multi-Stop Vertical Gradients */
       --ru-grad-vertical: linear-gradient(180deg, #F0F9F4 0%, #D4EFE0 30%, #A8DEC0 65%, #70C496 100%);
       --en-grad-vertical: linear-gradient(180deg, #FFF8F0 0%, #FEE5CC 30%, #FCC999 65%, #F5A866 100%);
-
-      /* Header & Organic Stem Tokens */
-      --header-bg: #FFD62C;         /* Brand Sunshine Yellow */
-      --header-height: 86px;        /* Fixed Banner Height */
-      --stem-color: #1B4332;        /* Dark Forest Green Botanical Stem */
-      --venue-bg: #93DDEA;          /* Fresh Seafoam Cyan Canvas */
-      --gallery-bg: #C6D1FF;        /* Soft Periwinkle Gallery Canvas */
-      --gallery-border: #D4DEFF;    /* Harmonized Border */
-
-      /* Foreground Brand Tokens */
-      --ru-primary: #059669;        /* Vivid Emerald Green */
-      --en-primary: #EA580C;        /* Luminous Solar Orange */
-      --cta-btn: #BE2A84;           /* Vivid Purple Orchid */
-      --w3w-red: #E11F26;           /* what3words Red */
-
-      /* Unified Typography Metrics */
+      --header-bg: #FFD62C;
+      --header-height: 86px;
+      --stem-color: #1B4332;
+      --venue-bg: #93DDEA;
+      --gallery-bg: #C6D1FF;
+      --gallery-border: #D4DEFF;
+      --ru-primary: #059669;
+      --en-primary: #EA580C;
+      --cta-btn: #BE2A84;
+      --w3w-red: #E11F26;
       --lead-font-size: 0.96rem;
       --lead-line-height: 1.55;
-
-      /* Surfaces, Borders & Ambient Shadows */
       --card-bg: #F4F7F5;
       --card-border-ru: #A7F3D0;
       --card-border-en: #FED7AA;
       --card-fixed-height: 160px;
-      
       --mission-card-height: 210px;
       --vision-card-height: 280px;
-
       --text-main: #111827;
       --text-muted: #374151;
       --shadow-ambient: 0 16px 36px -8px rgba(28, 25, 23, 0.16), 0 8px 16px -4px rgba(28, 25, 23, 0.08);
       --shadow-hover: 0 24px 48px -8px rgba(28, 25, 23, 0.22), 0 12px 24px -6px rgba(28, 25, 23, 0.12);
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: var(--header-height); overflow-x: hidden; }
+    body { font-family: 'Manrope', sans-serif; color: var(--text-main); background-color: #F0F9F4; line-height: 1.4; padding-top: var(--header-height); overflow-x: hidden; }
+    h1, h2, h3, .brand { font-family: 'Lora', serif; line-height: 1.25; }
 
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: var(--header-height);
-    }
-
-    body {
-      font-family: 'Manrope', sans-serif;
-      color: var(--text-main);
-      background-color: #F0F9F4;
-      line-height: 1.4;
-      padding-top: var(--header-height);
-      overflow-x: hidden;
-    }
-
-    h1, h2, h3, .brand {
-      font-family: 'Lora', serif;
-      line-height: 1.25;
-    }
-
-    .skip-link {
-      position: absolute;
-      top: -100px;
-      left: 10px;
-      background: var(--text-main);
-      color: #FFFFFF;
-      padding: 8px 14px;
-      z-index: 2000;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: top 0.2s ease;
-    }
-    .skip-link:focus {
-      top: 10px;
-    }
+    .skip-link { position: absolute; top: -100px; left: 10px; background: var(--text-main); color: #FFFFFF; padding: 8px 14px; z-index: 2000; text-decoration: none; border-radius: 6px; transition: top 0.2s ease; }
+    .skip-link:focus { top: 10px; }
 
     /* ============================================================
-       FIXED HEADER WITH DESKTOP & MOBILE RESPONSIVENESS
+       ANIMATED FLYING PAPER AIRPLANE (Inline SVG Setup)
        ============================================================ */
-    header {
+    .flying-plane-container {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: var(--header-height);
-      z-index: 1000;
-      background-color: var(--header-bg);
-      border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-      padding: 0 1.8rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      top: 0; 
+      left: 0; 
+      z-index: 1050;
+      pointer-events: none;
+      opacity: 0; 
+      filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.25));
+      will-change: transform, opacity;
     }
 
-    .nav-left {
-      display: flex;
-      align-items: center;
-      gap: 1.2rem;
-      z-index: 1020;
-    }
-
-    .header-logo-container {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 1010;
-    }
-
-    .header-logo-link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      text-decoration: none;
-    }
-
-    .header-logo-img {
-      height: 76px;
-      max-height: 90%;
-      width: auto;
+    .paper-plane-inline {
+      width: 48px;
+      height: 48px;
       display: block;
-      object-fit: contain;
     }
 
-    .nav-right {
-      display: flex;
-      align-items: center;
-      gap: 1.15rem;
-      z-index: 1020;
+    .paper-plane-inline path {
+      fill: var(--plane-color, #2ABD6D);
+      transition: fill 0.3s ease;
     }
 
-    .nav-link {
-      color: var(--cta-btn);
-      text-decoration: none;
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      line-height: 1.15;
-      padding: 0.2rem 0.25rem;
-      transition: opacity 0.15s ease;
-    }
-    .nav-link:hover {
-      opacity: 0.82;
-    }
-
-    .nav-text-ru {
-      font-weight: 800;
-      font-size: 0.84rem;
-      white-space: nowrap;
-    }
-
-    .nav-divider {
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: rgba(190, 42, 132, 0.32);
-      margin: 2px 0;
-      border-radius: 1px;
-    }
-
-    .nav-text-en {
-      font-weight: 600;
-      font-size: 0.7rem;
-      white-space: nowrap;
-      opacity: 0.9;
-    }
-
-    /* Crisp Inline Vector Flag Switcher Button */
-    .btn-lang-toggle {
-      background: #FFFFFF;
-      border: 2px solid var(--stem-color);
-      border-radius: 50px;
-      padding: 0.32rem 0.65rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.45rem;
-      cursor: pointer;
-      font-family: 'Manrope', sans-serif;
-      font-size: 0.78rem;
-      font-weight: 800;
-      color: var(--stem-color);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      white-space: nowrap;
-      flex-shrink: 0;
-      transition: transform 0.15s ease, background-color 0.15s ease;
-    }
-
-    .btn-lang-toggle:hover {
-      transform: scale(1.04);
-      background: #F4F7F5;
-    }
-
-    .lang-flag-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .btn-cta {
-      background: var(--cta-btn);
-      color: #FFFFFF;
-      padding: 0.45rem 1.1rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-family: 'Manrope', sans-serif;
-      transition: transform 0.15s ease;
-      box-shadow: 0 4px 14px rgba(190, 42, 132, 0.3);
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      line-height: 1.12;
-      flex-shrink: 0;
-    }
-
-    .btn-cta:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(190, 42, 132, 0.45);
-    }
-
-    .btn-text-ru {
-      font-weight: 800;
-      font-size: 0.84rem;
-      white-space: nowrap;
-    }
-
-    .btn-divider {
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: rgba(255, 255, 255, 0.45);
-      margin: 2px 0;
-      border-radius: 1px;
-    }
-
-    .btn-text-en {
-      font-weight: 600;
-      font-size: 0.7rem;
-      white-space: nowrap;
-      opacity: 0.95;
+    @media (prefers-reduced-motion: reduce) { 
+      .flying-plane-container { display: none !important; } 
     }
 
     /* ============================================================
-       1. ABOUT US SECTION
+       HEADER & NAVIGATION
        ============================================================ */
-    .about-section {
-      background: #FFFFFF;
-      padding: 2.4rem 2rem 3.5rem;
-      position: relative;
-      z-index: 10;
-    }
+    header { position: fixed; top: 0; left: 0; width: 100%; height: var(--header-height); z-index: 1000; background-color: var(--header-bg); border-bottom: 2px solid rgba(0, 0, 0, 0.1); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); padding: 0 1.8rem; display: flex; justify-content: space-between; align-items: center; }
+    .nav-left { display: flex; align-items: center; gap: 1.2rem; z-index: 1020; }
+    .header-logo-container { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); height: 100%; display: flex; align-items: center; justify-content: center; z-index: 1010; }
+    .header-logo-link { display: flex; align-items: center; justify-content: center; height: 100%; text-decoration: none; }
+    .header-logo-img { height: 76px; max-height: 90%; width: auto; display: block; object-fit: contain; }
+    .nav-right { display: flex; align-items: center; gap: 1.15rem; z-index: 1020; }
+    .nav-link { color: var(--cta-btn); text-decoration: none; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; line-height: 1.15; padding: 0.2rem 0.25rem; transition: opacity 0.15s ease; }
+    .nav-link:hover { opacity: 0.82; }
+    .nav-text-ru { font-weight: 800; font-size: 0.84rem; white-space: nowrap; }
+    .nav-divider { display: block; width: 100%; height: 1px; background-color: rgba(190, 42, 132, 0.32); margin: 2px 0; border-radius: 1px; }
+    .nav-text-en { font-weight: 600; font-size: 0.7rem; white-space: nowrap; opacity: 0.9; }
 
-    .about-section::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      width: 4px;
-      background-color: var(--stem-color);
-      transform: translateX(-50%);
-      z-index: 5;
-      border-radius: 4px;
-    }
+    .btn-lang-toggle { background: #FFFFFF; border: 2px solid var(--stem-color); border-radius: 50px; padding: 0.32rem 0.65rem; display: inline-flex; align-items: center; gap: 0.45rem; cursor: pointer; font-family: 'Manrope', sans-serif; font-size: 0.78rem; font-weight: 800; color: var(--stem-color); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); white-space: nowrap; flex-shrink: 0; transition: transform 0.15s ease, background-color 0.15s ease; }
+    .btn-lang-toggle:hover { transform: scale(1.04); background: #F4F7F5; }
+    .lang-flag-icon { display: flex; align-items: center; justify-content: center; }
 
-    .about-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 6;
-    }
-
-    .about-main-intro-box {
-      text-align: center;
-      max-width: 756px;
-      margin: -20px auto 0.4rem;
-      background: #E6F0EB;
-      border: 2px solid rgba(27, 67, 50, 0.15);
-      border-radius: 18px;
-      padding: 1.25rem 2rem 1.1rem;
-      box-shadow: 0 8px 24px -6px rgba(27, 67, 50, 0.12);
-      position: relative;
-      z-index: 10;
-    }
-
-    .about-main-intro-title {
-      font-family: 'Lora', serif;
-      font-size: 1.48rem;
-      color: var(--stem-color);
-      line-height: 1.32;
-      font-weight: 700;
-      margin-bottom: 0.35rem;
-    }
-
-    .about-main-intro-sub {
-      font-size: 0.9rem;
-      line-height: 1.5;
-      color: var(--ru-primary);
-      font-weight: 600;
-    }
-
-    .floating-milestone-badge {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 96px;
-      height: 96px;
-      border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, #FFF4B8 0%, #FFD62C 60%, #E5B800 100%);
-      border: 3px solid #FFFFFF;
-      box-shadow: 0 10px 25px -4px rgba(190, 42, 132, 0.35), 0 4px 12px rgba(27, 67, 50, 0.2);
-      text-align: center;
-      color: #1B4332;
-      user-select: none;
-      margin: 0.2rem auto -2.4rem;
-      position: relative;
-      z-index: 25;
-      animation: badgeFloat 2.8s ease-in-out infinite;
-      padding: 0.5rem;
-    }
-
-    .milestone-badge-main {
-      font-family: 'Manrope', sans-serif;
-      font-size: 0.74rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      line-height: 1.18;
-      color: #1B4332;
-    }
-
-    @keyframes badgeFloat {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-16px); }
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      align-items: start;
-    }
-
-    .about-col-ru {
-      text-align: right;
-      padding-right: 1rem;
-    }
-
-    .about-col-en {
-      text-align: left;
-      padding-left: 1rem;
-    }
-
-    .about-badge {
-      display: inline-block;
-      font-size: 0.78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      padding: 0.25rem 0.85rem;
-      border-radius: 50px;
-      margin-bottom: 0.8rem;
-    }
-
-    .about-col-ru .about-badge,
-    .team-header-ru .about-badge,
-    .venue-header-box .venue-badge {
-      background: rgba(5, 150, 105, 0.12);
-      color: var(--ru-primary);
-    }
-
-    .about-col-en .about-badge,
-    .team-header-en .about-badge {
-      background: rgba(234, 88, 12, 0.12);
-      color: var(--en-primary);
-    }
-
-    .about-heading {
-      font-size: 1.8rem;
-      color: var(--stem-color);
-      margin-bottom: 0.65rem;
-      font-weight: 700;
-      line-height: 1.25;
-    }
-
-    .hero-box p,
-    .about-lead {
-      font-size: var(--lead-font-size);
-      line-height: var(--lead-line-height);
-      color: var(--text-muted);
-      font-weight: 500;
-      margin-bottom: 1.8rem;
-    }
-
-    .values-container {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-    }
-
-    .value-card {
-      background: #EEF4F1;
-      border-radius: 14px;
-      padding: 1.3rem 1.5rem;
-      border: 1px solid rgba(27, 67, 50, 0.1);
-      transition: transform 0.2s ease;
-    }
-
-    .value-card-mission {
-      min-height: var(--mission-card-height);
-      border-left: 4px solid var(--ru-primary);
-    }
-    .about-col-ru .value-card-mission {
-      border-left: 1px solid rgba(27, 67, 50, 0.1);
-      border-right: 4px solid var(--ru-primary);
-    }
-
-    .value-card-vision {
-      min-height: var(--vision-card-height);
-      border-left: 4px solid var(--en-primary);
-    }
-    .about-col-ru .value-card-vision {
-      border-left: 1px solid rgba(27, 67, 50, 0.1);
-      border-right: 4px solid var(--en-primary);
-    }
-
-    .value-card-header {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 0.4rem;
-    }
-    .about-col-ru .value-card-header {
-      justify-content: flex-end;
-    }
-
-    .value-tag {
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: var(--stem-color);
-    }
-
-    .value-title {
-      font-size: 1.12rem;
-      font-weight: 700;
-      color: var(--text-main);
-      margin-bottom: 0.35rem;
-      font-family: 'Lora', serif;
-    }
-
-    .value-text {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
+    .btn-cta { background: var(--cta-btn); color: #FFFFFF; padding: 0.45rem 1.1rem; border-radius: 50px; text-decoration: none; font-family: 'Manrope', sans-serif; transition: transform 0.15s ease; box-shadow: 0 4px 14px rgba(190, 42, 132, 0.3); display: inline-flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; line-height: 1.12; flex-shrink: 0; }
+    .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(190, 42, 132, 0.45); }
+    .btn-text-ru { font-weight: 800; font-size: 0.84rem; white-space: nowrap; }
+    .btn-divider { display: block; width: 100%; height: 1px; background-color: rgba(255, 255, 255, 0.45); margin: 2px 0; border-radius: 1px; }
+    .btn-text-en { font-weight: 600; font-size: 0.7rem; white-space: nowrap; opacity: 0.95; }
 
     /* ============================================================
-       2. PROGRAMS SECTION
+       SECTIONS
        ============================================================ */
-    .split-main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      position: relative;
-      border-top: 3px solid rgba(27, 67, 50, 0.1);
-      border-bottom: 3px solid rgba(27, 67, 50, 0.1);
-    }
+    .about-section { background: #FFFFFF; padding: 2.4rem 2rem 3.5rem; position: relative; z-index: 10; }
+    .about-section::before { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 4px; background-color: var(--stem-color); transform: translateX(-50%); z-index: 5; border-radius: 4px; }
+    .about-container { max-width: 1100px; margin: 0 auto; position: relative; z-index: 6; }
+    .about-main-intro-box { text-align: center; max-width: 756px; margin: -20px auto 0.4rem; background: #E6F0EB; border: 2px solid rgba(27, 67, 50, 0.15); border-radius: 18px; padding: 1.25rem 2rem 1.1rem; box-shadow: 0 8px 24px -6px rgba(27, 67, 50, 0.12); position: relative; z-index: 10; }
+    .about-main-intro-title { font-family: 'Lora', serif; font-size: 1.48rem; color: var(--stem-color); line-height: 1.32; font-weight: 700; margin-bottom: 0.35rem; }
+    .about-main-intro-sub { font-size: 0.9rem; line-height: 1.5; color: var(--ru-primary); font-weight: 600; }
+    
+    .floating-milestone-badge { display: flex; align-items: center; justify-content: center; width: 96px; height: 96px; border-radius: 50%; background: radial-gradient(circle at 30% 30%, #FFF4B8 0%, #FFD62C 60%, #E5B800 100%); border: 3px solid #FFFFFF; box-shadow: 0 10px 25px -4px rgba(190, 42, 132, 0.35), 0 4px 12px rgba(27, 67, 50, 0.2); text-align: center; color: #1B4332; user-select: none; margin: 0.2rem auto -2.4rem; position: relative; z-index: 25; animation: badgeFloat 2.8s ease-in-out infinite; padding: 0.5rem; }
+    .milestone-badge-main { font-family: 'Manrope', sans-serif; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.18; color: #1B4332; }
+    @keyframes badgeFloat { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-16px); } }
 
-    .split-main::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      width: 4px;
-      background-color: var(--stem-color);
-      transform: translateX(-50%);
-      z-index: 5;
-      border-radius: 4px;
-    }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .about-col-ru { text-align: right; padding-right: 1rem; }
+    .about-col-en { text-align: left; padding-left: 1rem; }
+    .about-badge { display: inline-block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 0.25rem 0.85rem; border-radius: 50px; margin-bottom: 0.8rem; }
+    .about-col-ru .about-badge, .team-header-ru .about-badge, .venue-header-box .venue-badge { background: rgba(5, 150, 105, 0.12); color: var(--ru-primary); }
+    .about-col-en .about-badge, .team-header-en .about-badge { background: rgba(234, 88, 12, 0.12); color: var(--en-primary); }
+    .about-heading { font-size: 1.8rem; color: var(--stem-color); margin-bottom: 0.65rem; font-weight: 700; line-height: 1.25; }
+    .hero-box p, .about-lead { font-size: var(--lead-font-size); line-height: var(--lead-line-height); color: var(--text-muted); font-weight: 500; margin-bottom: 1.8rem; }
 
-    .column-ru {
-      background: var(--ru-grad-vertical);
-      padding: 2.2rem 3.5rem 3.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 1.8rem;
-    }
+    .values-container { display: flex; flex-direction: column; gap: 1.2rem; }
+    .value-card { background: #EEF4F1; border-radius: 14px; padding: 1.3rem 1.5rem; border: 1px solid rgba(27, 67, 50, 0.1); transition: transform 0.2s ease; }
+    .value-card-mission { min-height: var(--mission-card-height); border-left: 4px solid var(--ru-primary); }
+    .about-col-ru .value-card-mission { border-left: 1px solid rgba(27, 67, 50, 0.1); border-right: 4px solid var(--ru-primary); }
+    .value-card-vision { min-height: var(--vision-card-height); border-left: 4px solid var(--en-primary); }
+    .about-col-ru .value-card-vision { border-left: 1px solid rgba(27, 67, 50, 0.1); border-right: 4px solid var(--en-primary); }
+    .value-card-header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; }
+    .about-col-ru .value-card-header { justify-content: flex-end; }
+    .value-tag { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--stem-color); }
+    .value-title { font-size: 1.12rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.35rem; font-family: 'Lora', serif; }
+    .value-text { font-size: 0.88rem; color: var(--text-muted); line-height: 1.5; }
 
-    .column-en {
-      background: var(--en-grad-vertical);
-      padding: 2.2rem 3.5rem 3.5rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1.8rem;
-    }
-
-    .hero-box {
-      max-width: 490px;
-      width: 100%;
-      margin-bottom: 0.15rem;
-    }
+    .split-main { display: grid; grid-template-columns: 1fr 1fr; position: relative; border-top: 3px solid rgba(27, 67, 50, 0.1); border-bottom: 3px solid rgba(27, 67, 50, 0.1); }
+    .split-main::before { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 4px; background-color: var(--stem-color); transform: translateX(-50%); z-index: 5; border-radius: 4px; }
+    .column-ru { background: var(--ru-grad-vertical); padding: 2.2rem 3.5rem 3.5rem; display: flex; flex-direction: column; align-items: flex-end; gap: 1.8rem; }
+    .column-en { background: var(--en-grad-vertical); padding: 2.2rem 3.5rem 3.5rem; display: flex; flex-direction: column; align-items: flex-start; gap: 1.8rem; }
+    .hero-box { max-width: 490px; width: 100%; margin-bottom: 0.15rem; }
     .column-ru .hero-box { text-align: right; }
     .column-en .hero-box { text-align: left; }
-
-    .hero-box h2 {
-      font-size: 2.15rem;
-      margin-bottom: 0.65rem;
-      font-weight: 700;
-      line-height: 1.25;
-    }
+    .hero-box h2 { font-size: 2.15rem; margin-bottom: 0.65rem; font-weight: 700; line-height: 1.25; }
     .column-ru .hero-box h2 { color: var(--ru-primary); }
     .column-en .hero-box h2 { color: var(--en-primary); }
 
-    .card {
-      background-color: var(--card-bg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      border-radius: 16px;
-      box-shadow: var(--shadow-ambient);
-      position: relative;
-      max-width: 490px;
-      width: 100%;
-      min-height: var(--card-fixed-height);
-    }
-
-    .card-scroll {
-      height: 100%;
-      width: 100%;
-      padding: 0.9rem 1.15rem 0.85rem;
-      border-radius: 16px;
-    }
-
-    .card-ru {
-      border: 1px solid var(--card-border-ru);
-      border-right: 6px solid var(--ru-primary);
-      text-align: right;
-    }
-
-    .card-en {
-      border: 1px solid var(--card-border-en);
-      border-left: 6px solid var(--en-primary);
-      text-align: left;
-    }
-
-    .card-header-row {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 0.6rem;
-      margin-bottom: 0.25rem;
-    }
-
+    .card { background-color: var(--card-bg); background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 16px; box-shadow: var(--shadow-ambient); position: relative; max-width: 490px; width: 100%; min-height: var(--card-fixed-height); }
+    .card-scroll { height: 100%; width: 100%; padding: 0.9rem 1.15rem 0.85rem; border-radius: 16px; }
+    .card-ru { border: 1px solid var(--card-border-ru); border-right: 6px solid var(--ru-primary); text-align: right; }
+    .card-en { border: 1px solid var(--card-border-en); border-left: 6px solid var(--en-primary); text-align: left; }
+    .card-header-row { display: flex; align-items: baseline; justify-content: space-between; gap: 0.6rem; margin-bottom: 0.25rem; }
     .card-ru .card-header-row { flex-direction: row-reverse; }
     .card-en .card-header-row { flex-direction: row; }
-
-    .card-header-row h3 {
-      font-size: 1.05rem;
-      font-weight: 700;
-      line-height: 1.2;
-      margin: 0;
-      flex: 1;
-    }
+    .card-header-row h3 { font-size: 1.05rem; font-weight: 700; line-height: 1.2; margin: 0; flex: 1; }
     .card-ru .card-header-row h3 { color: var(--ru-primary); text-align: right; }
     .card-en .card-header-row h3 { color: var(--en-primary); text-align: left; }
-
-    .tag {
-      display: inline-block;
-      font-size: 0.7rem;
-      font-weight: 700;
-      padding: 0.12rem 0.55rem;
-      border-radius: 4px;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-      color: #FFFFFF;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
+    .tag { display: inline-block; font-size: 0.7rem; font-weight: 700; padding: 0.12rem 0.55rem; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.4px; color: #FFFFFF; white-space: nowrap; flex-shrink: 0; }
     .tag-green { background: var(--ru-primary); }
     .tag-orange { background: var(--en-primary); }
-
-    .card-desc {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      line-height: 1.4;
-      font-weight: 500;
-    }
-
-    .card-list {
-      margin: 0.35rem 0 0;
-      padding-left: 1.1rem;
-      list-style-type: disc;
-    }
-
-    .card-ru .card-list {
-      padding-left: 0;
-      padding-right: 1.1rem;
-      text-align: right;
-      direction: rtl;
-    }
-
+    .card-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.4; font-weight: 500; }
+    .card-list { margin: 0.35rem 0 0; padding-left: 1.1rem; list-style-type: disc; }
+    .card-ru .card-list { padding-left: 0; padding-right: 1.1rem; text-align: right; direction: rtl; }
     .card-ru .card-list li { direction: ltr; }
     .card-en .card-list { text-align: left; }
-
-    .card-list li {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      line-height: 1.35;
-      margin-bottom: 0.15rem;
-    }
-
+    .card-list li { font-size: 0.8rem; color: var(--text-muted); line-height: 1.35; margin-bottom: 0.15rem; }
     .card-ru .card-list li::marker { color: var(--ru-primary); }
     .card-en .card-list li::marker { color: var(--en-primary); }
 
-    /* ============================================================
-       3. WHO WE ARE (TEACHERS)
-       ============================================================ */
-    .team-section {
-      background: #FFFFFF;
-      padding: 2.4rem 2rem 4rem;
-      position: relative;
-      z-index: 10;
-    }
-
-    .team-section::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      width: 4px;
-      background-color: var(--stem-color);
-      transform: translateX(-50%);
-      z-index: 5;
-      border-radius: 4px;
-    }
-
-    .team-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 6;
-    }
-
-    .team-headers-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 4rem;
-      margin-bottom: 1.2rem;
-    }
-
+    .team-section { background: #FFFFFF; padding: 2.4rem 2rem 4rem; position: relative; z-index: 10; }
+    .team-section::before { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 4px; background-color: var(--stem-color); transform: translateX(-50%); z-index: 5; border-radius: 4px; }
+    .team-container { max-width: 1100px; margin: 0 auto; position: relative; z-index: 6; }
+    .team-headers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 1.2rem; }
     .team-header-ru { text-align: right; padding-right: 1rem; }
     .team-header-en { text-align: left; padding-left: 1rem; }
-
-    .team-cards-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.2rem 4rem;
-      align-items: stretch;
-    }
-
-    .member-card {
-      background: #EEF4F1;
-      border-radius: 20px;
-      padding: 2.2rem 1.8rem 2rem;
-      border: 1px solid rgba(27, 67, 50, 0.1);
-      box-shadow: var(--shadow-ambient);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
+    .team-cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.2rem 4rem; align-items: stretch; }
+    .member-card { background: #EEF4F1; border-radius: 20px; padding: 2.2rem 1.8rem 2rem; border: 1px solid rgba(27, 67, 50, 0.1); box-shadow: var(--shadow-ambient); display: flex; flex-direction: column; align-items: center; text-align: center; }
     .member-card-ru { border-top: 5px solid var(--ru-primary); }
     .member-card-en { border-top: 5px solid var(--en-primary); }
-
-    .member-avatar-wrap {
-      width: 136px;
-      height: 136px;
-      border-radius: 50%;
-      overflow: hidden;
-      background: #E2E8F0;
-      border: 4px solid var(--header-bg);
-      box-shadow: 0 6px 16px rgba(27, 67, 50, 0.15);
-      margin: 0 auto 1.4rem;
-    }
-
-    .member-avatar-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .member-content {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex: 1;
-    }
-
-    .member-name {
-      font-family: 'Lora', serif;
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--stem-color);
-      margin-bottom: 0.25rem;
-    }
-
-    .member-role {
-      font-size: 0.85rem;
-      font-weight: 700;
-      margin-bottom: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
+    .member-avatar-wrap { width: 136px; height: 136px; border-radius: 50%; overflow: hidden; background: #E2E8F0; border: 4px solid var(--header-bg); box-shadow: 0 6px 16px rgba(27, 67, 50, 0.15); margin: 0 auto 1.4rem; }
+    .member-avatar-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .member-content { width: 100%; display: flex; flex-direction: column; align-items: center; flex: 1; }
+    .member-name { font-family: 'Lora', serif; font-size: 1.25rem; font-weight: 700; color: var(--stem-color); margin-bottom: 0.25rem; }
+    .member-role { font-size: 0.85rem; font-weight: 700; margin-bottom: 0.85rem; text-transform: uppercase; letter-spacing: 0.5px; }
     .member-card-ru .member-role { color: var(--ru-primary); }
     .member-card-en .member-role { color: var(--en-primary); }
+    .member-bio { font-size: 0.88rem; color: var(--text-muted); line-height: 1.55; margin-bottom: 1.2rem; max-width: 430px; flex: 1; }
+    .member-badge { display: inline-block; font-size: 0.74rem; font-weight: 700; background: rgba(27, 67, 50, 0.08); color: var(--stem-color); padding: 0.35rem 0.85rem; border-radius: 50px; border: 1px solid rgba(27, 67, 50, 0.1); margin-top: auto; }
 
-    .member-bio {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      line-height: 1.55;
-      margin-bottom: 1.2rem;
-      max-width: 430px;
-      flex: 1;
-    }
+    .venue-section { background: var(--venue-bg); padding: 3.2rem 2rem 4rem; border-top: 3px solid rgba(27, 67, 50, 0.1); position: relative; z-index: 10; }
+    .venue-container { max-width: 1100px; margin: 0 auto; position: relative; z-index: 6; }
+    .venue-header-box { text-align: center; max-width: 756px; margin: 0 auto 2.2rem; background: #E6F0EB; border: 2px solid rgba(27, 67, 50, 0.15); border-radius: 18px; padding: 1.3rem 2rem; box-shadow: 0 8px 24px -6px rgba(27, 67, 50, 0.12); }
+    .venue-badge { display: inline-block; font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 0.2rem 0.75rem; border-radius: 50px; margin-bottom: 0.5rem; }
+    .venue-main-title { font-family: 'Lora', serif; font-size: 1.55rem; color: var(--stem-color); line-height: 1.3; font-weight: 700; margin-bottom: 0.35rem; }
+    .venue-main-sub { font-size: var(--lead-font-size); line-height: var(--lead-line-height); color: var(--text-muted); font-weight: 600; }
+    .venue-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2.4rem; align-items: stretch; margin-bottom: 2.2rem; }
+    .venue-map-card { background: #FFFFFF; border-radius: 20px; overflow: hidden; border: 1px solid rgba(27, 67, 50, 0.14); box-shadow: var(--shadow-ambient); min-height: 420px; }
+    .venue-map-frame { width: 100%; height: 100%; min-height: 420px; border: 0; display: block; }
+    .venue-info-card { background: #FFFFFF; border-radius: 20px; padding: 2.2rem 2rem; border: 1px solid rgba(27, 67, 50, 0.14); box-shadow: var(--shadow-ambient); display: flex; flex-direction: column; justify-content: center; gap: 1.5rem; }
+    .venue-info-block { display: flex; align-items: flex-start; gap: 1.1rem; }
+    .venue-info-icon { font-size: 1.5rem; line-height: 1; background: #EEF4F1; padding: 0.65rem; border-radius: 12px; border: 1px solid rgba(27, 67, 50, 0.1); flex-shrink: 0; }
+    .venue-info-title { font-family: 'Lora', serif; font-size: 1.12rem; color: var(--stem-color); font-weight: 700; margin-bottom: 0.25rem; }
+    .venue-info-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; }
+    .venue-info-sub { font-size: 0.82rem; color: var(--ru-primary); font-weight: 700; }
+    .w3w-link { display: inline-flex; align-items: center; gap: 0.25rem; color: var(--w3w-red); font-weight: 700; text-decoration: none; font-size: 0.88rem; margin-top: 0.35rem; }
+    .venue-parents-box { background: #FFFFFF; border-radius: 20px; padding: 2rem 2.2rem; border: 1px solid rgba(27, 67, 50, 0.14); box-shadow: var(--shadow-ambient); }
+    .venue-parents-header { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1.4rem; border-bottom: 1px dashed rgba(27, 67, 50, 0.15); padding-bottom: 0.8rem; }
+    .venue-parents-icon { font-size: 1.6rem; line-height: 1; }
+    .venue-parents-title { font-family: 'Lora', serif; font-size: 1.22rem; color: var(--stem-color); font-weight: 700; }
+    .venue-parents-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+    .venue-place-card { background: #F8FAF9; border: 1px solid rgba(27, 67, 50, 0.1); border-radius: 14px; padding: 1.15rem 1.25rem; transition: transform 0.2s ease; }
+    .venue-place-link { text-decoration: none; display: block; color: inherit; }
+    .venue-place-tag { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: var(--ru-primary); margin-bottom: 0.25rem; display: block; }
+    .venue-place-name { font-family: 'Lora', serif; font-size: 1.05rem; color: var(--text-main); font-weight: 700; margin-bottom: 0.25rem; display: flex; align-items: center; justify-content: space-between; }
+    .venue-place-address { font-size: 0.82rem; color: var(--text-muted); line-height: 1.4; }
 
-    .member-badge {
-      display: inline-block;
-      font-size: 0.74rem;
-      font-weight: 700;
-      background: rgba(27, 67, 50, 0.08);
-      color: var(--stem-color);
-      padding: 0.35rem 0.85rem;
-      border-radius: 50px;
-      border: 1px solid rgba(27, 67, 50, 0.1);
-      margin-top: auto;
-    }
-
-    /* ============================================================
-       4. VENUE & TIMETABLE
-       ============================================================ */
-    .venue-section {
-      background: var(--venue-bg);
-      padding: 3.2rem 2rem 4rem;
-      border-top: 3px solid rgba(27, 67, 50, 0.1);
-      position: relative;
-      z-index: 10;
-    }
-
-    .venue-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 6;
-    }
-
-    .venue-header-box {
-      text-align: center;
-      max-width: 756px;
-      margin: 0 auto 2.2rem;
-      background: #E6F0EB;
-      border: 2px solid rgba(27, 67, 50, 0.15);
-      border-radius: 18px;
-      padding: 1.3rem 2rem;
-      box-shadow: 0 8px 24px -6px rgba(27, 67, 50, 0.12);
-    }
-
-    .venue-badge {
-      display: inline-block;
-      font-size: 0.76rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      padding: 0.2rem 0.75rem;
-      border-radius: 50px;
-      margin-bottom: 0.5rem;
-    }
-
-    .venue-main-title {
-      font-family: 'Lora', serif;
-      font-size: 1.55rem;
-      color: var(--stem-color);
-      line-height: 1.3;
-      font-weight: 700;
-      margin-bottom: 0.35rem;
-    }
-
-    .venue-main-sub {
-      font-size: var(--lead-font-size);
-      line-height: var(--lead-line-height);
-      color: var(--text-muted);
-      font-weight: 600;
-    }
-
-    .venue-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 2.4rem;
-      align-items: stretch;
-      margin-bottom: 2.2rem;
-    }
-
-    .venue-map-card {
-      background: #FFFFFF;
-      border-radius: 20px;
-      overflow: hidden;
-      border: 1px solid rgba(27, 67, 50, 0.14);
-      box-shadow: var(--shadow-ambient);
-      min-height: 420px;
-    }
-
-    .venue-map-frame {
-      width: 100%;
-      height: 100%;
-      min-height: 420px;
-      border: 0;
-      display: block;
-    }
-
-    .venue-info-card {
-      background: #FFFFFF;
-      border-radius: 20px;
-      padding: 2.2rem 2rem;
-      border: 1px solid rgba(27, 67, 50, 0.14);
-      box-shadow: var(--shadow-ambient);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-
-    .venue-info-block {
-      display: flex;
-      align-items: flex-start;
-      gap: 1.1rem;
-    }
-
-    .venue-info-icon {
-      font-size: 1.5rem;
-      line-height: 1;
-      background: #EEF4F1;
-      padding: 0.65rem;
-      border-radius: 12px;
-      border: 1px solid rgba(27, 67, 50, 0.1);
-      flex-shrink: 0;
-    }
-
-    .venue-info-title {
-      font-family: 'Lora', serif;
-      font-size: 1.12rem;
-      color: var(--stem-color);
-      font-weight: 700;
-      margin-bottom: 0.25rem;
-    }
-
-    .venue-info-text {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
-
-    .venue-info-sub {
-      font-size: 0.82rem;
-      color: var(--ru-primary);
-      font-weight: 700;
-    }
-
-    .w3w-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.25rem;
-      color: var(--w3w-red);
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 0.88rem;
-      margin-top: 0.35rem;
-    }
-
-    /* While You Wait Cards */
-    .venue-parents-box {
-      background: #FFFFFF;
-      border-radius: 20px;
-      padding: 2rem 2.2rem;
-      border: 1px solid rgba(27, 67, 50, 0.14);
-      box-shadow: var(--shadow-ambient);
-    }
-
-    .venue-parents-header {
-      display: flex;
-      align-items: center;
-      gap: 0.85rem;
-      margin-bottom: 1.4rem;
-      border-bottom: 1px dashed rgba(27, 67, 50, 0.15);
-      padding-bottom: 0.8rem;
-    }
-
-    .venue-parents-icon {
-      font-size: 1.6rem;
-      line-height: 1;
-    }
-
-    .venue-parents-title {
-      font-family: 'Lora', serif;
-      font-size: 1.22rem;
-      color: var(--stem-color);
-      font-weight: 700;
-    }
-
-    .venue-parents-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.25rem;
-    }
-
-    .venue-place-card {
-      background: #F8FAF9;
-      border: 1px solid rgba(27, 67, 50, 0.1);
-      border-radius: 14px;
-      padding: 1.15rem 1.25rem;
-      transition: transform 0.2s ease;
-    }
-
-    .venue-place-link {
-      text-decoration: none;
-      display: block;
-      color: inherit;
-    }
-
-    .venue-place-tag {
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-      color: var(--ru-primary);
-      margin-bottom: 0.25rem;
-      display: block;
-    }
-
-    .venue-place-name {
-      font-family: 'Lora', serif;
-      font-size: 1.05rem;
-      color: var(--text-main);
-      font-weight: 700;
-      margin-bottom: 0.25rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .venue-place-address {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      line-height: 1.4;
-    }
-
-    /* ============================================================
-       5. GALLERY SECTION
-       ============================================================ */
-    .gallery-section {
-      background-color: var(--gallery-bg);
-      padding: 2.2rem 0 0.8rem;
-      border-top: 3px solid rgba(27, 67, 50, 0.12);
-      border-bottom: 3px solid rgba(27, 67, 50, 0.12);
-      position: relative;
-      z-index: 10;
-    }
-
-    .gallery-header {
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto 1.2rem;
-      padding: 0 1.5rem;
-    }
-
-    .gallery-header h2 {
-      font-size: 1.7rem;
-      color: var(--stem-color);
-      margin-bottom: 0.25rem;
-    }
-
-    .gallery-header p {
-      font-size: 0.92rem;
-      color: #1F2937;
-    }
-
-    .gallery-track {
-      display: flex;
-      gap: 0.55rem;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      padding: 0.2rem 2.5rem 0.6rem;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .gallery-item {
-      flex: 0 0 232px;
-      height: 160px;
-      position: relative;
-      scroll-snap-align: start;
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 6px 16px -3px rgba(27, 67, 50, 0.18);
-      border: 3px solid var(--gallery-border);
-      background: #FFFFFF;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .gallery-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(27, 67, 50, 0) 15%, rgba(27, 67, 50, 0.92) 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 0.75rem 0.85rem;
-      color: #FFFFFF;
-      opacity: 0;
-      transition: opacity 0.25s ease;
-    }
-
+    .gallery-section { background-color: var(--gallery-bg); padding: 2.2rem 0 0.8rem; border-top: 3px solid rgba(27, 67, 50, 0.12); border-bottom: 3px solid rgba(27, 67, 50, 0.12); position: relative; z-index: 10; }
+    .gallery-header { text-align: center; max-width: 680px; margin: 0 auto 1.2rem; padding: 0 1.5rem; }
+    .gallery-header h2 { font-size: 1.7rem; color: var(--stem-color); margin-bottom: 0.25rem; }
+    .gallery-header p { font-size: 0.92rem; color: #1F2937; }
+    .gallery-track { display: flex; gap: 0.55rem; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0.2rem 2.5rem 0.6rem; -webkit-overflow-scrolling: touch; }
+    .gallery-item { flex: 0 0 232px; height: 160px; position: relative; scroll-snap-align: start; border-radius: 14px; overflow: hidden; box-shadow: 0 6px 16px -3px rgba(27, 67, 50, 0.18); border: 3px solid var(--gallery-border); background: #FFFFFF; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .gallery-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(27, 67, 50, 0) 15%, rgba(27, 67, 50, 0.92) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 0.75rem 0.85rem; color: #FFFFFF; opacity: 0; transition: opacity 0.25s ease; }
     .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay-title { font-size: 0.85rem; font-weight: 700; color: #FFD62C; margin-bottom: 0.15rem; }
+    .gallery-overlay-sub { font-size: 0.72rem; color: #E2E8F0; }
 
-    .gallery-overlay-title {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: #FFD62C;
-      margin-bottom: 0.15rem;
-    }
-
-    .gallery-overlay-sub {
-      font-size: 0.72rem;
-      color: #E2E8F0;
-    }
-
-    /* ============================================================
-       6. CONTACT FOOTER
-       ============================================================ */
-    .contact-section {
-      background: linear-gradient(135deg, #1B4332 0%, #153326 100%);
-      color: #FFFFFF;
-      padding: 2.2rem 1.5rem 1.6rem;
-      position: relative;
-      z-index: 10;
-      border-top: 3px solid var(--header-bg);
-    }
-
-    .contact-container {
-      max-width: 880px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .contact-container h2 {
-      font-size: 1.4rem;
-      margin-bottom: 0.25rem;
-      color: #FFD62C;
-    }
-
-    .contact-subtitle {
-      font-size: 0.9rem;
-      color: #D1E7DD;
-      margin-bottom: 1.2rem;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-      margin-bottom: 1.4rem;
-    }
-
-    .contact-card {
-      background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 12px;
-      padding: 1rem 1.2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.75rem;
-    }
-
-    .contact-card-icon {
-      font-size: 1.35rem;
-      line-height: 1;
-    }
-
-    .contact-social-img {
-      width: 22px;
-      height: 22px;
-      object-fit: contain;
-      border-radius: 4px;
-    }
-
-    .contact-card a {
-      color: #FFFFFF;
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 600;
-    }
-
-    .contact-footer-note {
-      font-size: 0.8rem;
-      color: #A3CFBB;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      padding-top: 1rem;
-      margin-top: 0.5rem;
-    }
+    .contact-section { background: linear-gradient(135deg, #1B4332 0%, #153326 100%); color: #FFFFFF; padding: 2.2rem 1.5rem 1.6rem; position: relative; z-index: 10; border-top: 3px solid var(--header-bg); }
+    .contact-container { max-width: 880px; margin: 0 auto; text-align: center; }
+    .contact-container h2 { font-size: 1.4rem; margin-bottom: 0.25rem; color: #FFD62C; }
+    .contact-subtitle { font-size: 0.9rem; color: #D1E7DD; margin-bottom: 1.2rem; }
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 1.4rem; }
+    .contact-card { background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; padding: 1rem 1.2rem; display: flex; align-items: center; justify-content: center; gap: 0.75rem; }
+    .contact-card-icon { font-size: 1.35rem; line-height: 1; }
+    .contact-social-img { width: 22px; height: 22px; object-fit: contain; border-radius: 4px; }
+    .contact-card a { color: #FFFFFF; text-decoration: none; font-size: 0.95rem; font-weight: 600; }
+    .contact-footer-note { font-size: 0.8rem; color: #A3CFBB; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 1rem; margin-top: 0.5rem; }
 
     /* ============================================================
        DESKTOP DUAL-COLUMN FOCUS / GREYOUT EFFECT (> 860px)
@@ -1277,8 +369,6 @@
       .member-card-ru, .member-card-en {
         transition: filter 0.35s ease, opacity 0.35s ease;
       }
-
-      /* When Russian is Active (Default on Desktop) */
       body.lang-ru .about-col-en,
       body.lang-ru .column-en,
       body.lang-ru .team-header-en,
@@ -1287,7 +377,6 @@
         opacity: 0.35;
         pointer-events: none;
       }
-
       body.lang-ru .about-col-ru,
       body.lang-ru .column-ru,
       body.lang-ru .team-header-ru,
@@ -1296,8 +385,6 @@
         opacity: 1;
         pointer-events: auto;
       }
-
-      /* When English is Active */
       body.lang-en .about-col-ru,
       body.lang-en .column-ru,
       body.lang-en .team-header-ru,
@@ -1306,7 +393,6 @@
         opacity: 0.35;
         pointer-events: none;
       }
-
       body.lang-en .about-col-en,
       body.lang-en .column-en,
       body.lang-en .team-header-en,
@@ -1321,232 +407,69 @@
        RESPONSIVE MOBILE ENGINE (≤ 860px)
        ============================================================ */
     @media (max-width: 860px) {
-      header {
-        padding: 0 0.8rem;
-        height: 68px;
-        position: fixed;
-        width: 100vw;
-        max-width: 100%;
-      }
-
-      body {
-        padding-top: 68px;
-      }
-
+      header { padding: 0 0.8rem; height: 68px; position: fixed; width: 100vw; max-width: 100%; }
+      body { padding-top: 68px; }
       .nav-left { display: none; }
-
-      .header-logo-container {
-        position: static;
-        transform: none;
-        height: 100%;
-        display: flex;
-        align-items: center;
-      }
-
-      .header-logo-img {
-        height: 44px;
-      }
-
-      .nav-right {
-        gap: 0.45rem;
-      }
-
-      .nav-right .nav-link {
-        display: none;
-      }
-
-      .btn-lang-toggle {
-        padding: 0.28rem 0.55rem;
-        font-size: 0.72rem;
-      }
-
-      .btn-cta {
-        padding: 0.35rem 0.75rem;
-      }
-
-      .btn-text-ru, .btn-text-en {
-        font-size: 0.68rem;
-      }
-
-      .about-section, .team-section, .venue-section {
-        padding: 1.8rem 1rem 2.4rem;
-      }
-
-      .split-main::before,
-      .about-section::before,
-      .team-section::before,
-      .venue-section::before {
-        display: none;
-      }
-
-      .about-main-intro-box, .venue-header-box {
-        padding: 1rem 1rem;
-        margin-bottom: 1.2rem;
-        width: 100%;
-      }
-
-      .about-main-intro-title, .venue-main-title {
-        font-size: 1.18rem;
-      }
-
-      .floating-milestone-badge {
-        margin: 0.6rem auto 1.2rem;
-        animation: badgeFloat 2.8s ease-in-out infinite !important;
-      }
-
-      .about-grid,
-      .team-headers-grid,
-      .team-cards-grid,
-      .venue-grid {
-        display: block !important;
-        width: 100% !important;
-      }
-
-      .split-main {
-        display: block !important;
-        width: 100% !important;
-      }
-
-      .column-ru, .column-en {
-        padding: 1.8rem 1rem 2rem;
-        align-items: stretch !important;
-        gap: 1.2rem;
-        width: 100% !important;
-      }
-
-      .about-col-ru, .team-header-ru {
-        text-align: left !important;
-        padding-right: 0;
-      }
-
-      .hero-box {
-        text-align: left !important;
-        max-width: 100%;
-      }
-
-      .hero-box h2 {
-        font-size: 1.6rem;
-      }
-
-      .card {
-        max-width: 100% !important;
-        width: 100% !important;
-        min-height: auto !important;
-      }
-
-      .card-scroll {
-        padding: 1rem;
-      }
-
-      .card-ru, .card-en {
-        text-align: left !important;
-        border-right: 1px solid var(--card-border-ru);
-        border-left: 6px solid var(--ru-primary);
-      }
-
-      .card-en {
-        border-left-color: var(--en-primary);
-        border-right-color: var(--card-border-en);
-      }
-
-      .card-ru .card-header-row, .card-en .card-header-row {
-        flex-direction: row !important;
-      }
-
-      .card-ru .card-header-row h3 {
-        text-align: left !important;
-      }
-
-      .card-ru .card-list {
-        text-align: left !important;
-        direction: ltr !important;
-        padding-right: 0;
-        padding-left: 1.1rem;
-      }
-
-      .value-card {
-        min-height: auto !important;
-      }
-
-      .about-col-ru .value-card-header {
-        justify-content: flex-start !important;
-      }
-
-      .about-col-ru .value-card-mission,
-      .about-col-ru .value-card-vision {
-        border-right: 1px solid rgba(27, 67, 50, 0.08);
-        border-left: 4px solid var(--ru-primary);
-      }
-
-      .about-col-ru .value-card-vision {
-        border-left-color: var(--en-primary);
-      }
-
-      .member-card {
-        margin-bottom: 1.4rem;
-      }
-
-      .venue-map-card {
-        min-height: 280px;
-        margin-bottom: 1.2rem;
-      }
-
-      .venue-info-card {
-        padding: 1.4rem 1.2rem;
-        gap: 1.2rem;
-      }
-
-      .venue-parents-box {
-        padding: 1.4rem 1.1rem;
-      }
-
-      .venue-parents-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-track {
-        padding: 0.2rem 1rem 0.6rem;
-      }
-
-      .gallery-item {
-        flex: 0 0 190px;
-        height: 130px;
-      }
+      .header-logo-container { position: static; transform: none; height: 100%; display: flex; align-items: center; }
+      .header-logo-img { height: 44px; }
+      .nav-right { gap: 0.45rem; }
+      .nav-right .nav-link { display: none; }
+      .btn-lang-toggle { padding: 0.28rem 0.55rem; font-size: 0.72rem; }
+      .btn-cta { padding: 0.35rem 0.75rem; }
+      .btn-text-ru, .btn-text-en { font-size: 0.68rem; }
+      
+      .about-section, .team-section, .venue-section { padding: 1.8rem 1rem 2.4rem; }
+      .split-main::before, .about-section::before, .team-section::before, .venue-section::before { display: none; }
+      .about-main-intro-box, .venue-header-box { padding: 1rem 1rem; margin-bottom: 1.2rem; width: 100%; }
+      .about-main-intro-title, .venue-main-title { font-size: 1.18rem; }
+      
+      .floating-milestone-badge { margin: 0.6rem auto 1.2rem; animation: badgeFloat 2.8s ease-in-out infinite !important; }
+      
+      .about-grid, .team-headers-grid, .team-cards-grid, .venue-grid { display: block !important; width: 100% !important; }
+      .split-main { display: block !important; width: 100% !important; }
+      .column-ru, .column-en { padding: 1.8rem 1rem 2rem; align-items: stretch !important; gap: 1.2rem; width: 100% !important; }
+      .about-col-ru, .team-header-ru { text-align: left !important; padding-right: 0; }
+      .hero-box { text-align: left !important; max-width: 100%; }
+      .hero-box h2 { font-size: 1.6rem; }
+      
+      .card { max-width: 100% !important; width: 100% !important; min-height: auto !important; }
+      .card-scroll { padding: 1rem; }
+      .card-ru, .card-en { text-align: left !important; border-right: 1px solid var(--card-border-ru); border-left: 6px solid var(--ru-primary); }
+      .card-en { border-left-color: var(--en-primary); border-right-color: var(--card-border-en); }
+      .card-ru .card-header-row, .card-en .card-header-row { flex-direction: row !important; }
+      .card-ru .card-header-row h3 { text-align: left !important; }
+      .card-ru .card-list { text-align: left !important; direction: ltr !important; padding-right: 0; padding-left: 1.1rem; }
+      .value-card { min-height: auto !important; }
+      .about-col-ru .value-card-header { justify-content: flex-start !important; }
+      .about-col-ru .value-card-mission, .about-col-ru .value-card-vision { border-right: 1px solid rgba(27, 67, 50, 0.08); border-left: 4px solid var(--ru-primary); }
+      .about-col-ru .value-card-vision { border-left-color: var(--en-primary); }
+      
+      .member-card { margin-bottom: 1.4rem; }
+      .venue-map-card { min-height: 280px; margin-bottom: 1.2rem; }
+      .venue-info-card { padding: 1.4rem 1.2rem; gap: 1.2rem; }
+      .venue-parents-box { padding: 1.4rem 1.1rem; }
+      .venue-parents-grid { grid-template-columns: 1fr; }
+      .gallery-track { padding: 0.2rem 1rem 0.6rem; }
+      .gallery-item { flex: 0 0 190px; height: 130px; }
 
       /* Mobile Single-Language Visibility */
-      body.lang-en .about-col-ru,
-      body.lang-en .column-ru,
-      body.lang-en .team-header-ru,
-      body.lang-en .member-card-ru {
-        display: none !important;
-      }
-
-      body.lang-en .about-col-en,
-      body.lang-en .column-en,
-      body.lang-en .team-header-en,
-      body.lang-en .member-card-en {
-        display: block !important;
-      }
-
-      body.lang-ru .about-col-en,
-      body.lang-ru .column-en,
-      body.lang-ru .team-header-en,
-      body.lang-ru .member-card-en {
-        display: none !important;
-      }
-
-      body.lang-ru .about-col-ru,
-      body.lang-ru .column-ru,
-      body.lang-ru .team-header-ru,
-      body.lang-ru .member-card-ru {
-        display: block !important;
-      }
+      body.lang-en .about-col-ru, body.lang-en .column-ru, body.lang-en .team-header-ru, body.lang-en .member-card-ru { display: none !important; }
+      body.lang-en .about-col-en, body.lang-en .column-en, body.lang-en .team-header-en, body.lang-en .member-card-en { display: block !important; }
+      body.lang-ru .about-col-en, body.lang-ru .column-en, body.lang-ru .team-header-en, body.lang-ru .member-card-en { display: none !important; }
+      body.lang-ru .about-col-ru, body.lang-ru .column-ru, body.lang-ru .team-header-ru, body.lang-ru .member-card-ru { display: block !important; }
     }
   </style>
 </head>
 <body class="lang-ru">
 
   <a href="#about" class="skip-link">Skip to content / Перейти к контенту</a>
+
+  <!-- Animated Flying Paper Airplane -->
+  <div id="flyingPlane" class="flying-plane-container" aria-hidden="true">
+    <svg class="paper-plane-inline" id="planeIcon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" />
+    </svg>
+  </div>
 
   <!-- Fixed Navigation Banner -->
   <header>
@@ -1608,41 +531,32 @@
   <!-- 1. ABOUT US SECTION -->
   <section id="about" class="about-section" aria-label="About Us / О нас">
     <div class="about-container">
-
       <div class="about-main-intro-box" id="aboutMainIntro"></div>
-
       <!-- Floating Milestone Badge -->
       <aside class="floating-milestone-badge" aria-label="Multi-Culti: 2 YEARS TOGETHER!">
         <span class="milestone-badge-main">2 ГОДА ВМЕСТЕ!</span>
       </aside>
-
       <div class="about-grid">
         <div class="about-col-ru" id="aboutRu"></div>
         <div class="about-col-en" id="aboutEn"></div>
       </div>
-
     </div>
   </section>
 
   <!-- 2. OUR PROGRAMS AND GROUPS SECTION -->
   <main id="programs" class="split-main" aria-label="Our Programs / Наши программы">
-    
-    <!-- Left Column (Russian) -->
     <section class="column-ru" id="columnRu" aria-label="Информация о программах на русском">
       <div class="hero-box">
         <h2>Русский язык и творчество в Ливерпуле</h2>
         <p>В Multi-Culti мы распределяем детей по группам не только по возрасту, но и по уровню владения русским языком. Такой подход позволяет каждому ребёнку заниматься в комфортной среде, чувствовать уверенность в своих силах и двигаться вперёд в собственном темпе.</p>
       </div>
     </section>
-
-    <!-- Right Column (English) -->
     <section class="column-en" id="columnEn" aria-label="English Programs Information">
       <div class="hero-box">
         <h2>Russian Language &<br>Arts in Liverpool</h2>
         <p>At Multi-Culti, we group children not only by age but also by their Russian language proficiency level. This tailored approach ensures every child learns in a supportive environment, builds confidence, and progresses at their own natural pace.</p>
       </div>
     </section>
-
   </main>
 
   <!-- 3. WHO WE ARE (TEACHERS & FOUNDERS) -->
@@ -1652,7 +566,6 @@
         <div class="team-header-ru" id="teamHeaderRu"></div>
         <div class="team-header-en" id="teamHeaderEn"></div>
       </div>
-
       <div class="team-cards-grid" id="teamCardsGrid"></div>
     </div>
   </section>
@@ -1660,7 +573,6 @@
   <!-- 4. VENUE & FRIDAY TIMETABLE SECTION -->
   <section id="venue" class="venue-section" aria-label="Location & Schedule / Место и расписание">
     <div class="venue-container">
-      
       <div class="venue-header-box">
         <span class="venue-badge">Location & Schedule / Локация и время</span>
         <h2 class="venue-main-title">Where to Find Us / Как нас найти</h2>
@@ -1668,19 +580,9 @@
       </div>
 
       <div class="venue-grid">
-        <!-- Left Column: Interactive Map -->
         <div class="venue-map-card">
-          <iframe
-            class="venue-map-frame"
-            title="Multi-Culti Waterloo Location Map"
-            src="https://maps.google.com/maps?q=Waterloo%20Community%20Centre,%2026%20Great%20Georges%20Rd,%20Waterloo,%20Liverpool%20L22%201RD&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            loading="lazy"
-            allowfullscreen=""
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+          <iframe class="venue-map-frame" title="Multi-Culti Waterloo Location Map" src="https://maps.google.com/maps?q=Waterloo%20Community%20Centre,%2026%20Great%20Georges%20Rd,%20Waterloo,%20Liverpool%20L22%201RD&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
-        <!-- Right Column: Location & Public Transit Card -->
         <div class="venue-info-card">
           <div class="venue-info-block">
             <div class="venue-info-icon" aria-hidden="true">📍</div>
@@ -1689,13 +591,10 @@
               <p class="venue-info-text">
                 <strong>Waterloo Community Centre</strong><br>
                 26 Great Georges Rd, Waterloo, Liverpool L22 1RD<br>
-                <a href="https://what3words.com/gangs.fight.quiz" target="_blank" rel="noopener noreferrer" class="w3w-link">
-                  ///gangs.fight.quiz
-                </a>
+                <a href="https://what3words.com/gangs.fight.quiz" target="_blank" rel="noopener noreferrer" class="w3w-link">///gangs.fight.quiz</a>
               </p>
             </div>
           </div>
-
           <div class="venue-info-block">
             <div class="venue-info-icon" aria-hidden="true">⏰</div>
             <div>
@@ -1706,7 +605,6 @@
               </p>
             </div>
           </div>
-
           <div class="venue-info-block">
             <div class="venue-info-icon" aria-hidden="true">🚌</div>
             <div>
@@ -1726,41 +624,23 @@
           <span class="venue-parents-icon" aria-hidden="true">☕</span>
           <h3 class="venue-parents-title">While you wait for your child / Где провести время родителям</h3>
         </div>
-
         <div class="venue-parents-grid">
           <div class="venue-place-card">
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=The+Lake+House+Waterloo+Cambridge+Rd+Liverpool+L22+1RR"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="venue-place-link"
-              aria-label="The Lake House Waterloo on Google Maps">
+            <a href="https://www.google.com/maps/search/?api=1&query=The+Lake+House+Waterloo+Cambridge+Rd+Liverpool+L22+1RR" target="_blank" rel="noopener noreferrer" class="venue-place-link" aria-label="The Lake House Waterloo on Google Maps">
               <span class="venue-place-tag">Lakeside Café / Кафе у озера (~5 min walk)</span>
               <h4 class="venue-place-name">The Lake House Waterloo</h4>
               <p class="venue-place-address">Cambridge Rd, Waterloo, Liverpool L22 1RR</p>
             </a>
           </div>
-
           <div class="venue-place-card">
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=The+Royal+Hotel+Marine+Terrace+Waterloo+Liverpool+L22+5PR"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="venue-place-link"
-              aria-label="The Royal Hotel on Google Maps">
+            <a href="https://www.google.com/maps/search/?api=1&query=The+Royal+Hotel+Marine+Terrace+Waterloo+Liverpool+L22+5PR" target="_blank" rel="noopener noreferrer" class="venue-place-link" aria-label="The Royal Hotel on Google Maps">
               <span class="venue-place-tag">Historic Lounge / Отель и ресторан (~6 min walk)</span>
               <h4 class="venue-place-name">The Royal Hotel</h4>
               <p class="venue-place-address">Marine Terrace, Waterloo, Liverpool L22 5PR</p>
             </a>
           </div>
-
           <div class="venue-place-card">
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=The+Victoria+Hotel+and+Pub+27+Bath+St+Waterloo+Liverpool+L22+5PS"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="venue-place-link"
-              aria-label="The Victoria Hotel and Pub on Google Maps">
+            <a href="https://www.google.com/maps/search/?api=1&query=The+Victoria+Hotel+and+Pub+27+Bath+St+Waterloo+Liverpool+L22+5PS" target="_blank" rel="noopener noreferrer" class="venue-place-link" aria-label="The Victoria Hotel and Pub on Google Maps">
               <span class="venue-place-tag">Traditional Pub / Традиционный паб (~5 min walk)</span>
               <h4 class="venue-place-name">The Victoria Hotel and Pub</h4>
               <p class="venue-place-address">27 Bath St, Waterloo, Liverpool L22 5PS</p>
@@ -1768,7 +648,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -1778,7 +657,6 @@
       <h2>Life at Multi-Culti / Жизнь школы</h2>
       <p>Creative lessons, festive celebrations, drama, and authentic Russian conversation in Waterloo (Liverpool)</p>
     </div>
-
     <div class="gallery-track" id="galleryTrack"></div>
   </section>
 
@@ -1787,24 +665,20 @@
     <div class="contact-container">
       <h2>Contact Us / Свяжитесь с нами</h2>
       <p class="contact-subtitle">We are always happy to answer your questions and welcome your child for a trial lesson in Liverpool</p>
-
       <div class="contact-grid">
         <div class="contact-card">
           <span class="contact-card-icon" aria-hidden="true">✉️</span>
           <a href="mailto:multiculti.hub@gmail.com" aria-label="Email: multiculti.hub@gmail.com">multiculti.hub@gmail.com</a>
         </div>
-
         <div class="contact-card">
           <span class="contact-card-icon" aria-hidden="true">📞</span>
           <a href="tel:07388027615" aria-label="Phone: 07388 027615">07388 027615</a>
         </div>
-
         <div class="contact-card">
           <img src="images/Facebook_Logo_Primary.png" alt="Facebook" class="contact-social-img" />
           <a href="https://www.facebook.com/russianlanguageliverpool" target="_blank" rel="noopener noreferrer" aria-label="Facebook: Multi-Culti Liverpool">Multi-Culti Liverpool</a>
         </div>
       </div>
-
       <p class="contact-footer-note">
         &copy; 2024-2026 Multi-Culti Hub. Waterloo Community Centre, 26 Great Georges Rd, Waterloo, Liverpool L22 1RD. All rights reserved.
       </p>
@@ -1817,10 +691,98 @@
   <script src="team-data.js"></script>
   <script src="gallery-data.js"></script>
 
-  <!-- Dynamic Content Renderers & Language Switcher Logic -->
+  <!-- Dynamic Content Renderers, Animation Engine & Language Switcher Logic -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      // 1. Language Toggle Setup
+      
+      // ==========================================
+      // 1. BULLETPROOF BEZIER TRAJECTORY ENGINE
+      // ==========================================
+      const plane = document.getElementById("flyingPlane");
+      const planeIcon = document.getElementById("planeIcon");
+      const colorPalette = ['#2ABD6D', '#F8C315', '#0047AF', '#CC6CE7', '#FF3133', '#28C1E1', '#FE904D', '#BF2A84', '#5271FF'];
+      let currentAnimation = null;
+      
+      // Rotates the SVG so the nose points forward along the curve
+      const baseSvgRotation = 45; 
+
+      function triggerPlaneFlight() {
+        if (!plane || !planeIcon) return;
+        
+        // Assign Random Color to the Inline SVG Fill
+        const randColor = colorPalette[Math.floor(Math.random() * colorPalette.length)];
+        planeIcon.style.setProperty('--plane-color', randColor);
+
+        // Screen Boundaries
+        const w = window.innerWidth || document.documentElement.clientWidth;
+        const h = window.innerHeight || document.documentElement.clientHeight;
+        const offset = 120; // Start/End off-screen distance
+
+        // Define 4 screen edges (0=Top, 1=Right, 2=Bottom, 3=Left)
+        const edges = [
+          { x: Math.random() * w, y: -offset },
+          { x: w + offset, y: Math.random() * h },
+          { x: Math.random() * w, y: h + offset },
+          { x: -offset, y: Math.random() * h }
+        ];
+
+        // Pick start and end edges
+        const startIdx = Math.floor(Math.random() * 4);
+        let endIdx = Math.floor(Math.random() * 4);
+        if (startIdx === endIdx) endIdx = (endIdx + 1) % 4; 
+
+        const p0 = edges[startIdx];
+        const p3 = edges[endIdx];
+
+        // Generate sweeping control points for loops and curves
+        const p1 = { x: Math.random() * w, y: Math.random() * h };
+        const p2 = { x: Math.random() * w, y: Math.random() * h };
+
+        // Generate Keyframes mathematically along the Cubic Bezier curve
+        const keyframes = [];
+        const steps = 60; // 60 frames for smooth curves
+
+        for (let i = 0; i <= steps; i++) {
+          const t = i / steps;
+          
+          const x = Math.pow(1-t, 3)*p0.x + 3*Math.pow(1-t, 2)*t*p1.x + 3*(1-t)*Math.pow(t, 2)*p2.x + Math.pow(t, 3)*p3.x;
+          const y = Math.pow(1-t, 3)*p0.y + 3*Math.pow(1-t, 2)*t*p1.y + 3*(1-t)*Math.pow(t, 2)*p2.y + Math.pow(t, 3)*p3.y;
+          
+          const dx = 3*Math.pow(1-t, 2)*(p1.x - p0.x) + 6*(1-t)*t*(p2.x - p1.x) + 3*Math.pow(t, 2)*(p3.x - p2.x);
+          const dy = 3*Math.pow(1-t, 2)*(p1.y - p0.y) + 6*(1-t)*t*(p2.y - p1.y) + 3*Math.pow(t, 2)*(p3.y - p2.y);
+          
+          const angle = (Math.atan2(dy, dx) * (180 / Math.PI)) + baseSvgRotation;
+
+          // Fade in and out
+          let opacity = 1;
+          if (i < 5) opacity = i / 5;
+          if (i > steps - 5) opacity = (steps - i) / 5;
+          if (i === 0 || i === steps) opacity = 0;
+
+          keyframes.push({
+            transform: `translate(${x}px, ${y}px) rotate(${angle}deg)`,
+            opacity: opacity
+          });
+        }
+
+        if (currentAnimation) currentAnimation.cancel();
+
+        // Launch Animation (Random duration between 8 and 18 seconds)
+        const durationMs = (8 + Math.random() * 10) * 1000;
+        currentAnimation = plane.animate(keyframes, {
+          duration: durationMs,
+          easing: 'linear',
+          fill: 'forwards'
+        });
+      }
+      
+      // Launch first flight after 2 seconds, then strictly every 30 seconds
+      setTimeout(triggerPlaneFlight, 2000);
+      setInterval(triggerPlaneFlight, 30000);
+
+      // ==========================================
+      // 2. LANGUAGE SWITCHER LOGIC
+      // ==========================================
       const toggleBtn = document.getElementById("langToggleBtn");
       const flagIconContainer = document.getElementById("langFlagIcon");
       const codeSpan = document.getElementById("langCode");
@@ -1874,7 +836,9 @@
         });
       }
 
-      // 2. Render About Us, Mission & Vision
+      // ==========================================
+      // 3. DYNAMIC CONTENT RENDERING
+      // ==========================================
       if (typeof aboutData !== "undefined") {
         const mainIntroBox = document.getElementById("aboutMainIntro");
         const aboutRu = document.getElementById("aboutRu");
@@ -1915,7 +879,6 @@
         if (aboutEn && aboutData.en) aboutEn.innerHTML = renderAboutCol(aboutData.en);
       }
 
-      // 3. Render Program Cards
       if (typeof programsData !== "undefined") {
         const ruContainer = document.getElementById("columnRu");
         const enContainer = document.getElementById("columnEn");
@@ -1947,7 +910,6 @@
         }
       }
 
-      // 4. Render Teachers & Founders
       if (typeof teamData !== "undefined") {
         const headerRu = document.getElementById("teamHeaderRu");
         const headerEn = document.getElementById("teamHeaderEn");
@@ -1981,10 +943,7 @@
               pairedHTML += `
                 <div class="member-card member-card-ru">
                   <div class="member-avatar-wrap">
-                    ${mRu.image 
-                      ? `<img src="${mRu.image}" alt="${mRu.name}" class="member-avatar-img" />` 
-                      : `<span>👩‍🏫</span>`
-                    }
+                    ${mRu.image ? `<img src="${mRu.image}" alt="${mRu.name}" class="member-avatar-img" />` : `<span>👩‍🏫</span>`}
                   </div>
                   <div class="member-content">
                     <h3 class="member-name">${mRu.name}</h3>
@@ -2000,10 +959,7 @@
               pairedHTML += `
                 <div class="member-card member-card-en">
                   <div class="member-avatar-wrap">
-                    ${mEn.image 
-                      ? `<img src="${mEn.image}" alt="${mEn.name}" class="member-avatar-img" />` 
-                      : `<span>👩‍🏫</span>`
-                    }
+                    ${mEn.image ? `<img src="${mEn.image}" alt="${mEn.name}" class="member-avatar-img" />` : `<span>👩‍🏫</span>`}
                   </div>
                   <div class="member-content">
                     <h3 class="member-name">${mEn.name}</h3>
@@ -2019,7 +975,6 @@
         }
       }
 
-      // 5. Render Gallery Cards
       const galleryTrack = document.getElementById("galleryTrack");
       if (typeof galleryData !== "undefined" && Array.isArray(galleryData) && galleryTrack) {
         galleryTrack.innerHTML = galleryData.map(item => `
@@ -2034,6 +989,5 @@
       }
     });
   </script>
-
 </body>
 </html>
